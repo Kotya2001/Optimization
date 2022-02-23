@@ -26,7 +26,7 @@ def get_data(numberOfObjects, numberOfFeatures, namesOfCrits, rankCrits, numberO
 
 
 def LinearProgrammingExample(general, w, costs, p, e, years, T=3, const=5):
-    typesOfplaces = len(w.get('Регион_1')['Приоритетность площадки'])
+    typesOfplaces = len(w[list(w.keys())[0]]['Приоритетность площадки'])
     numberOfRegs = len(w)
 
     cost = [costs[i] for i in list(costs.keys())]
@@ -36,7 +36,7 @@ def LinearProgrammingExample(general, w, costs, p, e, years, T=3, const=5):
 
     e = [e[i] for i in list(e.keys())]
     p = [p[i] for i in list(p.keys())]
-    b = [general[i]['Количесвто баскетболистов'] for i in list(general.keys())]
+    b = [general[i]['Количество баскетболистов'] for i in list(general.keys())]
 
     count = 0
     solver = pywraplp.Solver.CreateSolver('SCIP')
@@ -115,7 +115,7 @@ def LinearProgrammingExample(general, w, costs, p, e, years, T=3, const=5):
 
 
 general, w, cost, p, e = get_data(
-    30, 6, ['Количесвто баскетболистов',
+    19, 6, ['Количество баскетболистов',
             'количестве существующих спортивных инфраструктурных объектов',
             'количество ресурсов',
             'возможность выделения в городе необходимого земельного участка',

@@ -36,9 +36,9 @@ class GenerateJSON():
         for i in range(len(self.names_of_obj)):
             for j in range(len(self.names_of_crits)):
                 if self.names_of_crits[j] not in self.int_crits and self.names_of_crits[j] not in self.bn_crits and \
-                        self.names_of_crits[j] != 'Количесвто баскетболистов':
+                        self.names_of_crits[j] != 'Количество баскетболистов':
                     self.matrix[i][j] = int(random.randint(20000, 10000043994))
-                elif self.names_of_crits[j] == 'Количесвто баскетболистов':
+                elif self.names_of_crits[j] == 'Количество баскетболистов':
                     self.matrix[i][j] = int(np.random.randint(1, 5000, (1, 1))[0][0])
                 elif self.names_of_crits in self.int_crits:
                     self.matrix[i][j] = int(np.random.randint(1, 10000, (1, 1))[0][0])
