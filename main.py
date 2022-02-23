@@ -4,6 +4,17 @@ import numpy as np
 
 
 def get_data(numberOfObjects, numberOfFeatures, namesOfCrits, rankCrits, numberOfTypes, intCrits, bnCrits):
+    """
+
+    :param numberOfObjects: int - Количесвто городов
+    :param numberOfFeatures: int - Количесвто критериев
+    :param namesOfCrits: List - Названия криетриев для оптимизации
+    :param rankCrits:  List - спикок ранговых критериев (Приеоретиность)
+    :param numberOfTypes: int - Колчиесвто типов площадок
+    :param intCrits: List - сипсок челочисленных критериев
+    :param bnCrits: list - список бинарных критериев
+    :return:
+    """
     obj = GenerateJSON(numberOfObjects, numberOfFeatures, namesOfCrits, rankCrits, numberOfTypes, intCrits, bnCrits)
 
     obj.gap_matrix_no_rk()
