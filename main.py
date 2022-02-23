@@ -25,7 +25,7 @@ def get_data(numberOfObjects, numberOfFeatures, namesOfCrits, rankCrits, numberO
     return general, w, cost, p, e
 
 
-def LinearProgrammingExample(general, w, costs, p, e, years, T=3, const=5):
+def LinearProgrammingExample(general, w, costs, p, e, years, T, const):
     typesOfplaces = len(w[list(w.keys())[0]]['Приоритетность площадки'])
     numberOfRegs = len(w)
 
@@ -125,4 +125,4 @@ general, w, cost, p, e = get_data(
     ], ['наличие представительства ПСБ', 'возможность выделения в городе необходимого земельного участка']
 )
 
-print(LinearProgrammingExample(general, w, cost, p, e, 3))
+print(LinearProgrammingExample(general, w, cost, p, e, 3, 3, 5))
