@@ -59,7 +59,6 @@ class GenerateJSON():
             json.dump(_cost, file, indent=4, ensure_ascii=False)
         with open('GenJSON/b.json', 'w', encoding='utf-8') as file:
             json.dump(_b, file, indent=4, ensure_ascii=False)
-        # return _b
 
     def info(self):
 
