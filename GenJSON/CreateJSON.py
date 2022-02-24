@@ -1,77 +1,71 @@
 import numpy as np
 import random
+import json
 
 
 class GenerateJSON():
 
-    def __init__(self, number_of_object, number_of_criterions, names_of_crits, rK_crits, rk_obj, int_crits, bn_crits,
-                 random_state=42):
+    def __init__(self, numberOfRegs, typesOfPlaces, T):
+        self.numberOfRegs = numberOfRegs
+        self.typesOfPlaces = typesOfPlaces
+        self.namesOfRegs = ['Регион' + '_' + str(i) for i in range(1, numberOfRegs + 1)]
+        self.w = np.zeros((self.numberOfRegs, self.typesOfPlaces)).astype(np.int64)
+        self.b = np.zeros((self.numberOfRegs,)).astype(np.int64)
+        self.T = T
 
-        '''
-        number_of_object - Количесвто объектов
-        number_of_criterions - Количесвто критериев
-        names_of_crits - Имена критериев --> list
-        rK_crits - ранговые критергии --> list
-        rK_obj - количесвто типов категорий --> list
-        int_crits - Имена целочисленных критериев (Кроме количесвта баскетболистов) --> list
-        bn_crits - Имена бинарных критериев --> list
+    def gap(self):
 
-        '''
+        # Зполняем матрицу приоритетностей площадок
+        for i in range(self.numberOfRegs):
+            for j in range(self.typesOfPlaces):
+                self.w[i][j] = int(np.random.randint(1, 6, (1, 1))[0][0])
 
-        self.number_of_object = number_of_object
-        self.number_of_criterions = number_of_criterions
-        self.names_of_obj = ['Регион' + '_' + str(i) for i in range(1, number_of_object + 1)]
-        self.names_of_crits = names_of_crits
-        self.rK_crits = rK_crits
-        self.random_state = random_state
-        self.int_crits = int_crits
-        self.rk_obj = rk_obj
-        self.bn_crits = bn_crits
+        # Заполняем матрицу количесвта баскетболистов
+        for i in range(self.numberOfRegs):
+            self.b[i] = int(np.random.randint(3245, 10001, (1, 1))[0][0])
 
-        self.matrix = np.zeros((self.number_of_object, self.number_of_criterions)).astype(np.int64)
-        self.rk_matrix = np.zeros((self.number_of_object, self.rk_obj)).astype(np.int64)
+        # Словарь стоимостей типов площадок
+        _cost = {'Стоимость площадки типа' + '_' + str(i): random.randint(12000000, 20000000) for i in
+                 range(1, self.typesOfPlaces + 1)}
 
-    def gap_matrix_no_rk(self):
+        # Словарь рагов регионов
+        _p = {'Ранг региона' + '_' + str(j): random.randint(1, 8) for j in range(1, self.numberOfRegs + 1)}
 
-        for i in range(len(self.names_of_obj)):
-            for j in range(len(self.names_of_crits)):
-                if self.names_of_crits[j] not in self.int_crits and self.names_of_crits[j] not in self.bn_crits and \
-                        self.names_of_crits[j] != 'Количество баскетболистов':
-                    self.matrix[i][j] = int(random.randint(20000, 10000043994))
-                elif self.names_of_crits[j] == 'Количество баскетболистов':
-                    self.matrix[i][j] = int(np.random.randint(1, 5000, (1, 1))[0][0])
-                elif self.names_of_crits in self.int_crits:
-                    self.matrix[i][j] = int(np.random.randint(1, 10000, (1, 1))[0][0])
-                elif self.names_of_crits[j] in self.bn_crits:
-                    self.matrix[i][j] = int(np.random.randint(0, 2, (1, 1))[0][0])
+        # Словарь вмещаемости количества людей для каждого типа площадки
+        _e = {'Тип площадки' + '_' + str(e): random.randint(51, 142) for e in range(1, self.typesOfPlaces + 1)}
 
-    def gap_matrix_rk(self):
+        # Словарь приориттностей для каждого региона
+        _w = {name: {'Приоритетность площадки': {}} for name in self.namesOfRegs}
+        w_keys = list(_w.keys())
+        squared = ['Тип площадки' + '_' + str(j) for j in range(1, self.typesOfPlaces + 1)]
 
-        for k in range(len(self.names_of_obj)):
-            for t in range(self.rk_obj):
-                self.rk_matrix[k][t] = int(np.random.randint(1, 6, (1, 1))[0][0])
-
-    def get_json(self):
-        _json = {name: {} for name in self.names_of_obj}
-
-        arr = list(_json.keys())
-
-        for i in range(len(arr)):
-            for j in range(len(self.names_of_crits)):
-                _json[arr[i]][self.names_of_crits[j]] = self.matrix[i][j]
-
-        _w = {name: {self.rK_crits[0]: {}} for name in self.names_of_obj}
-
-        arr1 = list(_w.keys())
-        squared = ['Тип площадки' + '_' + str(j) for j in range(1, self.rk_obj + 1)]
-
-        for i in range(len(arr1)):
+        for i in range(len(w_keys)):
             for j in range(len(squared)):
-                _w[arr1[i]][self.rK_crits[0]][squared[j]] = int(self.rk_matrix[i][j])
+                _w[w_keys[i]]['Приоритетность площадки'][squared[j]] = int(self.w[i][j])
 
-        _cost = {'Стоимость площадки типа' + str(o): random.randint(12000000, 20000000) for o in
-                 range(1, self.rk_obj + 1)}
-        _p = {'Ранг региона' + str(u): random.randint(0, 8) for u in range(1, self.number_of_object + 1)}
-        _e = {'Тип площадки' + '_' + str(e): random.randint(50, 82) for e in range(1, self.rk_obj + 1)}
+        # Словарь количества баскетболистов для каждого региона
+        _b = {name: {'Количество баскетболистов': None} for name in self.namesOfRegs}
+        b_keys = list(_b.keys())
+        for ind in range(len(b_keys)):
+            _b[b_keys[ind]]['Количество баскетболистов'] = int(self.b[ind])
 
-        return _json, _w, _cost, _p, _e
+        with open('GenJSON/w.json', 'w', encoding='utf-8') as file:
+            json.dump(_w, file, indent=4, ensure_ascii=False)
+        with open('GenJSON/p.json', 'w', encoding='utf-8') as file:
+            json.dump(_p, file, indent=4, ensure_ascii=False)
+        with open('GenJSON/e.json', 'w', encoding='utf-8') as file:
+            json.dump(_e, file, indent=4, ensure_ascii=False)
+        with open('GenJSON/cost.json', 'w', encoding='utf-8') as file:
+            json.dump(_cost, file, indent=4, ensure_ascii=False)
+        with open('GenJSON/b.json', 'w', encoding='utf-8') as file:
+            json.dump(_b, file, indent=4, ensure_ascii=False)
+        # return _b
+
+    def info(self):
+
+        info = {'Количество регионов' : self.numberOfRegs,
+                'Количесвто типов площадок' : self.typesOfPlaces,
+                'Число лет' : self.T}
+
+        with open('GenJSON/info.json', 'w', encoding='utf-8') as file:
+            json.dump(info, file, indent=4, ensure_ascii=False)
