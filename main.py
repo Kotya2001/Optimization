@@ -16,6 +16,11 @@ obj.info()
 
 
 def get_data(json_paths):
+    """
+
+    :param json_paths: tuple путей к json  файлам
+    :return: list для задачи оптимизации
+    """
     b, cost, e, info, p, w = files_paths
 
     with open(b) as file:
@@ -43,6 +48,19 @@ def get_data(json_paths):
 
 
 def LinearProgrammingExample(w, b, cost, p, e, numberOfRegs, typesOfPlaces, T, const=5):
+    """
+
+    :param w: матрица приоритетностей площадок
+    :param b: вектор количества спортсменов
+    :param cost: стоимость площадок
+    :param p: ранг регионов
+    :param e: вместимость площадок
+    :param numberOfRegs: сколько регионов
+    :param typesOfPlaces: сколько типов площадок
+    :param T: на какое количество лет
+    :param const: верхнее ограничение на количесвто площадок
+    :return: dict количесва площадок для каждого региона, конкретного типа в конктретный год
+    """
     result = {}
 
     count = 0
