@@ -4,37 +4,31 @@ from GenJSON.CreateJSON import GenerateJSON
 from ortools.linear_solver import pywraplp
 import numpy as np
 
-numberOfRegs = 23
-typesOfPlaces = 4
+numberOfRegs = 10
+typesOfPlaces = 3
 T = 3
-files_paths = (
-    'GenJSON/b.json', 'GenJSON/cost.json', 'GenJSON/e.json', 'GenJSON/info.json', 'GenJSON/p.json', 'GenJSON/w.json')
+path = 'GenJSON/data.json'
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T)
 obj.gap()
-obj.info()
 
 
-def get_data(json_paths):
+def get_data(json_path):
     """
 
-    :param json_paths: tuple путей к json  файлам
+    :param json_path: путь к файлу json
     :return: list для задачи оптимизации
     """
-    b, cost, e, info, p, w = files_paths
 
-    with open(b) as file:
-        b = json.load(file)
-    with open(cost) as file:
-        cost = json.load(file)
-    with open(e) as file:
-        e = json.load(file)
-    with open(info) as file:
-        info = json.load(file)
-    with open(p) as file:
-        p = json.load(file)
-    with open(w) as file:
-        w = json.load(file)
+    with open(json_path) as file:
+        data = json.load(file)
+
+    info = data["Общая информация"]
+    w = data["Приоритетности площадок"]
+    b = data["Данные о баскетболистах"]
+    cost = data["Стоимость площадок"]
+    p = data["Ранги регионов"]
+    e = data["Вместимость площадок"]
 
     cost = [cost[i] for i in list(cost.keys())]
     w = [[*list((list(w[key].values())[0].values()))] for key in list(w.keys())]
@@ -42,12 +36,12 @@ def get_data(json_paths):
     p = [p[i] for i in list(p.keys())]
     b = [b[i]['Количество баскетболистов'] for i in list(b.keys())]
 
-    numberOfRegs, typesOfPlaces, T = info['Количество регионов'], info['Количесвто типов площадок'], info['Число лет']
+    T = info['Число лет']
 
-    return w, b, cost, p, e, numberOfRegs, typesOfPlaces, T
+    return w, b, cost, p, e, T
 
 
-def LinearProgrammingExample(w, b, cost, p, e, numberOfRegs, typesOfPlaces, T, const=5):
+def LinearProgrammingExample(w, b, cost, p, e, T, numberOfRegs, typesOfPlaces, const=5):
     """
 
     :param w: матрица приоритетностей площадок
@@ -55,8 +49,6 @@ def LinearProgrammingExample(w, b, cost, p, e, numberOfRegs, typesOfPlaces, T, c
     :param cost: стоимость площадок
     :param p: ранг регионов
     :param e: вместимость площадок
-    :param numberOfRegs: сколько регионов
-    :param typesOfPlaces: сколько типов площадок
     :param T: на какое количество лет
     :param const: верхнее ограничение на количесвто площадок
     :return: dict количесва площадок для каждого региона, конкретного типа в конктретный год
@@ -137,4 +129,4 @@ def LinearProgrammingExample(w, b, cost, p, e, numberOfRegs, typesOfPlaces, T, c
     return result
 
 
-print(LinearProgrammingExample(*get_data(files_paths), const=4))
+print(LinearProgrammingExample(*get_data(path), numberOfRegs, typesOfPlaces, const=4))

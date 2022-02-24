@@ -55,22 +55,14 @@ class GenerateJSON():
         for ind in range(len(b_keys)):
             _b[b_keys[ind]]['Количество баскетболистов'] = int(self.b[ind])
 
-        with open('GenJSON/w.json', 'w', encoding='utf-8') as file:
-            json.dump(_w, file, indent=4, ensure_ascii=False)
-        with open('GenJSON/p.json', 'w', encoding='utf-8') as file:
-            json.dump(_p, file, indent=4, ensure_ascii=False)
-        with open('GenJSON/e.json', 'w', encoding='utf-8') as file:
-            json.dump(_e, file, indent=4, ensure_ascii=False)
-        with open('GenJSON/cost.json', 'w', encoding='utf-8') as file:
-            json.dump(_cost, file, indent=4, ensure_ascii=False)
-        with open('GenJSON/b.json', 'w', encoding='utf-8') as file:
-            json.dump(_b, file, indent=4, ensure_ascii=False)
+        info = {'Число лет': self.T}
 
-    def info(self):
+        data = {'Общая информация': info,
+                'Приоритетности площадок': _w,
+                'Данные о баскетболистах': _b,
+                'Стоимость площадок': _cost,
+                'Ранги регионов': _p,
+                'Вместимость площадок': _e}
 
-        info = {'Количество регионов' : self.numberOfRegs,
-                'Количесвто типов площадок' : self.typesOfPlaces,
-                'Число лет' : self.T}
-
-        with open('GenJSON/info.json', 'w', encoding='utf-8') as file:
-            json.dump(info, file, indent=4, ensure_ascii=False)
+        with open('GenJSON/data.json', 'w', encoding='utf-8') as file:
+            json.dump(data, file, indent=4, ensure_ascii=False)
