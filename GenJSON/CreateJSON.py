@@ -6,6 +6,12 @@ import json
 class GenerateJSON():
 
     def __init__(self, numberOfRegs, typesOfPlaces, T):
+        """
+
+        :param numberOfRegs: Сколько регионов
+        :param typesOfPlaces: сколько типов площадок
+        :param T: сколько лет
+        """
         self.numberOfRegs = numberOfRegs
         self.typesOfPlaces = typesOfPlaces
         self.namesOfRegs = ['Регион' + '_' + str(i) for i in range(1, numberOfRegs + 1)]

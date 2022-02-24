@@ -4,8 +4,8 @@ from GenJSON.CreateJSON import GenerateJSON
 from ortools.linear_solver import pywraplp
 import numpy as np
 
-numberOfRegs = 12
-typesOfPlaces = 3
+numberOfRegs = 23
+typesOfPlaces = 4
 T = 3
 files_paths = (
     'GenJSON/b.json', 'GenJSON/cost.json', 'GenJSON/e.json', 'GenJSON/info.json', 'GenJSON/p.json', 'GenJSON/w.json')
@@ -137,4 +137,4 @@ def LinearProgrammingExample(w, b, cost, p, e, numberOfRegs, typesOfPlaces, T, c
     return result
 
 
-print(LinearProgrammingExample(*get_data(files_paths), const=5))
+print(LinearProgrammingExample(*get_data(files_paths), const=4))
