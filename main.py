@@ -4,7 +4,7 @@ from GenJSON.CreateJSON import GenerateJSON
 from ortools.linear_solver import pywraplp
 import numpy as np
 
-numberOfRegs = 10
+numberOfRegs = 3
 typesOfPlaces = 3
 T = 3
 path = 'GenJSON/data.json'
@@ -24,24 +24,37 @@ def get_data(json_path):
         data = json.load(file)
 
     info = data["Общая информация"]
-    w = data["Приоритетности площадок"]
-    b = data["Данные о баскетболистах"]
+
+    w_dict = {i: data["Информация регионов"][i]["Приоритетность площадки"] for i in
+              list(data["Информация регионов"].keys())}
+    b = {i: data["Информация регионов"][i]["Количество баскетболистов"] for i in
+         list(data["Информация регионов"].keys())}
     cost = data["Стоимость площадок"]
     p = data["Ранги регионов"]
     e = data["Вместимость площадок"]
 
+    # Сортируем ключи json, чтобы учесть неупорядоченность введенных данных
+    b = dict(sorted(b.items(), key=lambda x: x[0]))
+    cost = dict(sorted(cost.items(), key=lambda x: x[0]))
+    p = dict(sorted(p.items(), key=lambda x: x[0]))
+    e = dict(sorted(e.items(), key=lambda x: x[0]))
+    w_dict = dict(sorted({i: dict(sorted(w_dict[i].items(), key=lambda x: x[0])) for i in list(w_dict.keys())}.items(),
+                         key=lambda x: x[0]))
+
     cost = [cost[i] for i in list(cost.keys())]
-    w = [[*list((list(w[key].values())[0].values()))] for key in list(w.keys())]
+    w = [[*list((list(w_dict[key].values())))] for key in list(w_dict.keys())]
     e = [e[i] for i in list(e.keys())]
     p = [p[i] for i in list(p.keys())]
-    b = [b[i]['Количество баскетболистов'] for i in list(b.keys())]
-
+    b = [b[i] for i in list(b.keys())]
     T = info['Число лет']
 
-    return w, b, cost, p, e, T
+    return w, b, cost, p, e, T, w_dict,
 
 
-def LinearProgrammingExample(w, b, cost, p, e, T, numberOfRegs, typesOfPlaces, const=5):
+# print(get_data('GenJSON/data.json'))
+
+
+def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, numberOfRegs, typesOfPlaces, const=5):
     """
 
     :param w: матрица приоритетностей площадок
@@ -61,9 +74,9 @@ def LinearProgrammingExample(w, b, cost, p, e, T, numberOfRegs, typesOfPlaces, c
 
     # Создаем переменные
     for t in range(1, T + 1):
-        for j in range(1, typesOfPlaces + 1):
-            for i in range(1, numberOfRegs + 1):
-                variables.append(solver.IntVar(0, 20, ('x_' + str(i) + '_' + str(j) + '_' + str(t))))
+        for key in list(w_dict.keys()):
+            for k in list(w_dict[key].keys()):
+                variables.append(solver.IntVar(0, 10, (key + '_' + k + '_' + 'год' + '_' + str(t))))
 
     # Верхняя граница
     for var in variables:

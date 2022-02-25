@@ -31,7 +31,7 @@ class GenerateJSON():
             self.b[i] = int(np.random.randint(3245, 10001, (1, 1))[0][0])
 
         # Словарь стоимостей типов площадок
-        _cost = {'Стоимость площадки типа' + '_' + str(i): random.randint(12000000, 20000000) for i in
+        _cost = {'Тип площадки' + '_' + str(i): random.randint(12000000, 20000000) for i in
                  range(1, self.typesOfPlaces + 1)}
 
         # Словарь рагов регионов
@@ -55,11 +55,15 @@ class GenerateJSON():
         for ind in range(len(b_keys)):
             _b[b_keys[ind]]['Количество баскетболистов'] = int(self.b[ind])
 
+        for key in list(_w.keys()):
+            _w[key].update(_b[key])
+
+
         info = {'Число лет': self.T}
 
         data = {'Общая информация': info,
-                'Приоритетности площадок': _w,
-                'Данные о баскетболистах': _b,
+                'Информация регионов': _w,
+                # 'Данные о баскетболистах': _b,
                 'Стоимость площадок': _cost,
                 'Ранги регионов': _p,
                 'Вместимость площадок': _e}
