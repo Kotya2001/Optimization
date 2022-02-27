@@ -6,7 +6,6 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
                              typesOfPlaces):
     result = {}
 
-    count = 0
     solver = pywraplp.Solver.CreateSolver('SCIP')
     variables = []
 
@@ -50,24 +49,23 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
         for i in range(0, len(arr.T.ravel().tolist()), T):
             res = [e[c] * sum(arr.T.ravel().tolist()[i:i + T]) for c in range(len(e))]
 
-        solver.Add(sum(res) <= b[count])
-        count += 1
+        solver.Add(sum(res) <= b[int(y / T)])
 
-    objective = solver.Objective()
-    count = 0
+    # objective = solver.Objective()
+    obj = []
 
     for y in range(0, len(ex), T):
         arr = ex[y:T + y, :]
         for t in range(1, T + 1):
             for j in range(typesOfPlaces):
-                objective.SetCoefficient(arr[t - 1][j], int((w[count][j] + p[count]) * (T + 1 - t) / T))
-        count += 1
-    objective.SetMaximization()
+                obj.append(int((w[int(y / T)][j] + p[int(y / T)]) * (T + 1 - t) / T) * arr[t - 1][j])
+                # objective.SetCoefficient(arr[t - 1][j], int((w[int(y / T)][j] + p[int(y / T)]) * (T + 1 - t) / T))
+    # objective.SetMaximization()
 
+    solver.Maximize(sum(obj))
     status = solver.Solve()
-    count = 0
 
-    if status == pywraplp.Solver.OPTIMAL or status == pywraplp.Solver.FEASIBLE:
+    if status == pywraplp.Solver.OPTIMAL:
 
         for y in range(0, len(ex), T):
             arr = ex[y:T + y, :].T
@@ -75,6 +73,8 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
                 for t in range(T):
                     if arr[i, t].solution_value() > 0:
                         result[str(arr[i, t])] = arr[i, t].solution_value()
+        print('Objective value =', solver.Objective().Value())
+    print('Problem solved in %d iterations' % solver.iterations())
+    print('Problem solved in %f milliseconds' % solver.wall_time())
 
-            count += 1
     return result

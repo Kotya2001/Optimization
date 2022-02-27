@@ -8,9 +8,12 @@ class GenerateJSON:
     def __init__(self, numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear):
         """
 
-        :param numberOfRegs: Сколько регионов
-        :param typesOfPlaces: сколько типов площадок
-        :param T: сколько лет
+        :param numberOfRegs: -> int, number of regions
+        :param typesOfPlaces: -> int, number of basketball courts types
+        :param T:
+        :param upperBound:
+        :param totalBudget:
+        :param totalProjPerYear:
         """
         self.numberOfRegs = numberOfRegs
         self.typesOfPlaces = typesOfPlaces
@@ -77,10 +80,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 6
+numberOfRegs = 9
 typesOfPlaces = 3
 T = 3
-upperBound, totalBudget, totalProjPerYear = 4, 160000000, 3
+upperBound, totalBudget, totalProjPerYear = 3, 160000000, 3
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear)
 obj.gap()
