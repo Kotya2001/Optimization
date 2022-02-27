@@ -3,9 +3,9 @@ import random
 import json
 
 
-class GenerateJSON():
+class GenerateJSON:
 
-    def __init__(self, numberOfRegs, typesOfPlaces, T):
+    def __init__(self, numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear):
         """
 
         :param numberOfRegs: Сколько регионов
@@ -18,6 +18,9 @@ class GenerateJSON():
         self.w = np.zeros((self.numberOfRegs, self.typesOfPlaces)).astype(np.int64)
         self.b = np.zeros((self.numberOfRegs,)).astype(np.int64)
         self.T = T
+        self.upperBound = upperBound
+        self.totalBudget = totalBudget
+        self.totalProjPerYear = totalProjPerYear
 
     def gap(self):
 
@@ -35,7 +38,7 @@ class GenerateJSON():
                  range(1, self.typesOfPlaces + 1)}
 
         # Словарь рагов регионов
-        _p = {'Ранг региона' + '_' + str(j): random.randint(1, 8) for j in range(1, self.numberOfRegs + 1)}
+        _p = {self.namesOfRegs[j]: {'Ранг': random.randint(1, 8)} for j in range(len(self.namesOfRegs))}
 
         # Словарь вмещаемости количества людей для каждого типа площадки
         _e = {'Тип площадки' + '_' + str(e): random.randint(51, 142) for e in range(1, self.typesOfPlaces + 1)}
@@ -57,16 +60,18 @@ class GenerateJSON():
 
         for key in list(_w.keys()):
             _w[key].update(_b[key])
+            _w[key].update(_p[key])
 
+        cost_and_capacity = {i: {"Стоимость": _cost[i], "Вместимость": _e[i]} for i in list(_cost.keys())}
 
-        info = {'Число лет': self.T}
-
-        data = {'Общая информация': info,
-                'Информация регионов': _w,
-                # 'Данные о баскетболистах': _b,
-                'Стоимость площадок': _cost,
-                'Ранги регионов': _p,
-                'Вместимость площадок': _e}
+        data = {'Периоды': self.T,
+                'Огрничение на количество проектов в год': self.totalProjPerYear,
+                'Общий бюджет': self.totalBudget,
+                'Мксимальное количество площадок в регионе в год': self.upperBound,
+                'Количество регионов': self.numberOfRegs,
+                'Количество типов площадок': self.typesOfPlaces,
+                'Регионы': _w,
+                'Типы площадок': cost_and_capacity}
 
         with open('GenJSON/data.json', 'w', encoding='utf-8') as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
