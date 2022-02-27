@@ -65,13 +65,22 @@ class GenerateJSON:
         cost_and_capacity = {i: {"Стоимость": _cost[i], "Вместимость": _e[i]} for i in list(_cost.keys())}
 
         data = {'Периоды': self.T,
-                'Огрничение на количество проектов в год': self.totalProjPerYear,
+                'Ограничение на количество проектов в год': self.totalProjPerYear,
                 'Общий бюджет': self.totalBudget,
-                'Мксимальное количество площадок в регионе в год': self.upperBound,
+                'Максимальное количество площадок в регионе в год': self.upperBound,
                 'Количество регионов': self.numberOfRegs,
                 'Количество типов площадок': self.typesOfPlaces,
                 'Регионы': _w,
                 'Типы площадок': cost_and_capacity}
 
-        with open('GenJSON/data.json', 'w', encoding='utf-8') as file:
+        with open('data.json', 'w', encoding='utf-8') as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
+
+
+numberOfRegs = 6
+typesOfPlaces = 3
+T = 3
+upperBound, totalBudget, totalProjPerYear = 4, 160000000, 3
+
+obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear)
+obj.gap()

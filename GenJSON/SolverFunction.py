@@ -25,7 +25,7 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
         for j in range(0, len(variables[i::numberOfRegs]), typesOfPlaces):
             solver.Add(sum(variables[i::numberOfRegs][j:j + typesOfPlaces]) <= totalProjPerYear)
 
-    # Ограничения на стоиммость объектов за 3 года
+    # Ограничения на стоиммость объектов за T лет
     for i in range(numberOfRegs):
         ex = []
         for j in range(0, len(variables[i::numberOfRegs]), typesOfPlaces):
