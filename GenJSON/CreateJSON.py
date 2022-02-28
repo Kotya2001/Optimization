@@ -71,8 +71,6 @@ class GenerateJSON:
                 'Limit on the number of projects per year': self.totalProjPerYear,
                 'Total budget': self.totalBudget,
                 'The maximum number of basketball courts in the region per year': self.upperBound,
-                'Number of regions': self.numberOfRegs,
-                'Number of basketball courts types': self.typesOfPlaces,
                 'Regions': _w,
                 'Types of basketball courts': cost_and_capacity}
 

@@ -1,8 +1,9 @@
 from GenJSON.SolverFunction import LinearProgrammingExample
+from GenJSON.CreateJSON import numberOfRegs, typesOfPlaces
 import json
 
 
-def get_data(json_path):
+def get_data(json_path, numberOfRegs, typesOfPlaces):
     with open(json_path) as file:
         data = json.load(file)
 
@@ -32,13 +33,12 @@ def get_data(json_path):
     b = [b[i] for i in list(b.keys())]
     upperBound, totalBudget, totalProjPerYear = data["The maximum number of basketball courts in the region per year"], \
                                                 data["Total budget"], data["Limit on the number of projects per year"]
-    numberOfRegs, typesOfPlaces = data["Number of regions"], data["Number of basketball courts types"]
 
     return w, b, cost, p, e, T, w_dict, upperBound, totalBudget, totalProjPerYear, numberOfRegs, typesOfPlaces
 
 
 path = 'GenJSON/data.json'
 
-transformFunction = get_data(path)
+transformFunction = get_data(path, numberOfRegs, typesOfPlaces)
 solverFunction = LinearProgrammingExample(*transformFunction)
 print(json.dumps(solverFunction, indent=4, ensure_ascii=False))

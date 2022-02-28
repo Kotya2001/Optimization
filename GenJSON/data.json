@@ -3,58 +3,56 @@
     "Limit on the number of projects per year": 3,
     "Total budget": 160000000,
     "The maximum number of basketball courts in the region per year": 9,
-    "Number of regions": 4,
-    "Number of basketball courts types": 3,
     "Regions": {
         "Region_1": {
             "Priority of basketball court": {
-                "Type of basketball court_1": 3,
-                "Type of basketball court_2": 1,
-                "Type of basketball court_3": 5
+                "Type of basketball court_1": 4,
+                "Type of basketball court_2": 3,
+                "Type of basketball court_3": 4
             },
-            "Number of players": 3521,
-            "Rank": 4
+            "Number of players": 9374,
+            "Rank": 1
         },
         "Region_2": {
+            "Priority of basketball court": {
+                "Type of basketball court_1": 4,
+                "Type of basketball court_2": 3,
+                "Type of basketball court_3": 1
+            },
+            "Number of players": 7797,
+            "Rank": 7
+        },
+        "Region_3": {
             "Priority of basketball court": {
                 "Type of basketball court_1": 1,
                 "Type of basketball court_2": 2,
                 "Type of basketball court_3": 2
             },
-            "Number of players": 6575,
-            "Rank": 5
-        },
-        "Region_3": {
-            "Priority of basketball court": {
-                "Type of basketball court_1": 4,
-                "Type of basketball court_2": 4,
-                "Type of basketball court_3": 2
-            },
-            "Number of players": 8547,
-            "Rank": 3
+            "Number of players": 3553,
+            "Rank": 1
         },
         "Region_4": {
             "Priority of basketball court": {
-                "Type of basketball court_1": 5,
-                "Type of basketball court_2": 5,
-                "Type of basketball court_3": 1
+                "Type of basketball court_1": 1,
+                "Type of basketball court_2": 3,
+                "Type of basketball court_3": 5
             },
-            "Number of players": 9839,
-            "Rank": 3
+            "Number of players": 6046,
+            "Rank": 4
         }
     },
     "Types of basketball courts": {
         "Type of basketball court_1": {
-            "Cost": 17550720,
-            "Capacity": 108
+            "Cost": 19996991,
+            "Capacity": 53
         },
         "Type of basketball court_2": {
-            "Cost": 17750400,
-            "Capacity": 82
+            "Cost": 13734853,
+            "Capacity": 66
         },
         "Type of basketball court_3": {
-            "Cost": 15259425,
-            "Capacity": 140
+            "Cost": 16249315,
+            "Capacity": 72
         }
     }
 }
