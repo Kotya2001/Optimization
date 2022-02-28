@@ -4,7 +4,7 @@ import numpy as np
 
 def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudget, totalProjPerYear, numberOfRegs,
                              typesOfPlaces):
-    years = ['год' + '_' + str(i) for i in range(1, T + 1)]
+    years = ['year' + '_' + str(i) for i in range(1, T + 1)]
     ans = {reg: {court: {year: None for year in years} for court in list(w_dict[reg].keys())} for reg in
            list(w_dict.keys())}
 
