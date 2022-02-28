@@ -43,8 +43,11 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
 
     ex = np.array(ex)
 
-    # Ограничение на колиество баскетболистов
+    # Ограничение на максимальное количесвто площадок в каждом регионе
+    for i in range(0, len(ex.T.ravel()), T * typesOfPlaces):
+        solver.Add(sum(ex.T.ravel()[i:(T * typesOfPlaces) + i]) <= 5)
 
+    # Ограничение на колиество баскетболистов
     for y in range(0, len(ex), T):
         arr = ex[y:T + y, :]
 
