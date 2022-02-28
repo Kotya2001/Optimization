@@ -80,10 +80,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 9
+numberOfRegs = 11
 typesOfPlaces = 3
 T = 3
-upperBound, totalBudget, totalProjPerYear = 3, 160000000, 3
+upperBound, totalBudget, totalProjPerYear = 9, 160000000, 3
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear)
 obj.gap()

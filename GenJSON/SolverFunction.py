@@ -4,7 +4,9 @@ import numpy as np
 
 def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudget, totalProjPerYear, numberOfRegs,
                              typesOfPlaces):
-    result = {}
+    years = ['год' + '_' + str(i) for i in range(1, T + 1)]
+    ans = {reg: {court: {year: None for year in years} for court in list(w_dict[reg].keys())} for reg in
+           list(w_dict.keys())}
 
     solver = pywraplp.Solver.CreateSolver('SCIP')
     variables = []
@@ -13,7 +15,7 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
     for t in range(1, T + 1):
         for key in list(w_dict.keys()):
             for k in list(w_dict[key].keys()):
-                variables.append(solver.IntVar(0, 10, (key + '_' + k + '_' + 'год' + '_' + str(t))))
+                variables.append(solver.IntVar(0, 10, (key + '.' + k + '.' + years[t - 1])))
 
     # Верхняя граница
     for var in variables:
@@ -51,7 +53,6 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
 
         solver.Add(sum(res) <= b[int(y / T)])
 
-    # objective = solver.Objective()
     obj = []
 
     for y in range(0, len(ex), T):
@@ -59,8 +60,6 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
         for t in range(1, T + 1):
             for j in range(typesOfPlaces):
                 obj.append(int((w[int(y / T)][j] + p[int(y / T)]) * (T + 1 - t) / T) * arr[t - 1][j])
-                # objective.SetCoefficient(arr[t - 1][j], int((w[int(y / T)][j] + p[int(y / T)]) * (T + 1 - t) / T))
-    # objective.SetMaximization()
 
     solver.Maximize(sum(obj))
     status = solver.Solve()
@@ -71,10 +70,11 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
             arr = ex[y:T + y, :].T
             for i in range(typesOfPlaces):
                 for t in range(T):
-                    if arr[i, t].solution_value() > 0:
-                        result[str(arr[i, t])] = arr[i, t].solution_value()
+                    reg, court, year = tuple(str(arr[i, t]).split('.'))
+                    ans[reg][court][year] = int(arr[i, t].solution_value())
+
         print('Objective value =', solver.Objective().Value())
     print('Problem solved in %d iterations' % solver.iterations())
     print('Problem solved in %f milliseconds' % solver.wall_time())
 
-    return result
+    return ans
