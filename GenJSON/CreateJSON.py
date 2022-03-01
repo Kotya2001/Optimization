@@ -30,7 +30,7 @@ class GenerateJSON:
         # Зполняем матрицу приоритетностей площадок
         for i in range(self.numberOfRegs):
             for j in range(self.typesOfPlaces):
-                self.w[i][j] = int(np.random.randint(1, 6, (1, 1))[0][0])
+                self.w[i][j] = int(np.random.randint(1, 18, (1, 1))[0][0])
 
         # Заполняем матрицу количесвта баскетболистов
         for i in range(self.numberOfRegs):
@@ -41,7 +41,7 @@ class GenerateJSON:
                  range(1, self.typesOfPlaces + 1)}
 
         # Словарь рагов регионов
-        _p = {self.namesOfRegs[j]: {'Rank': random.randint(1, 8)} for j in range(len(self.namesOfRegs))}
+        _p = {self.namesOfRegs[j]: {'Rank': random.randint(1, 11)} for j in range(len(self.namesOfRegs))}
 
         # Словарь вмещаемости количества людей для каждого типа площадки
         _e = {'Type of basketball court' + '_' + str(e): random.randint(51, 142) for e in range(1, self.typesOfPlaces + 1)}
@@ -78,10 +78,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 9
+numberOfRegs = 37
 typesOfPlaces = 3
 T = 3
-upperBound, totalBudget, totalProjPerYear = 6, 160000000, 3
+upperBound, totalBudget, totalProjPerYear = 7, 160000000, 3
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear)
 obj.gap()
