@@ -78,7 +78,7 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 37
+numberOfRegs = 8
 typesOfPlaces = 3
 T = 3
 upperBound, totalBudget, totalProjPerYear = 7, 160000000, 3
