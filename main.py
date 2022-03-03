@@ -7,6 +7,7 @@ def get_data(json_path):
         data = json.load(file)
 
     T = data["Periods"]
+    maxNumberCourts = data['The maximum number of basketball courts all types for each region']
 
     w_dict = {i: data["Regions"][i]["Priority of basketball court"] for i in
               list(data["Regions"].keys())}
@@ -18,12 +19,13 @@ def get_data(json_path):
          list(data["Regions"].keys())}
 
     # Сортируем ключи json, чтобы учесть неупорядоченность введенных данных
-    b = dict(sorted(b.items(), key=lambda x: x[0]))
-    cost = dict(sorted(cost.items(), key=lambda x: x[0]))
-    p = dict(sorted(p.items(), key=lambda x: x[0]))
-    e = dict(sorted(e.items(), key=lambda x: x[0]))
-    w_dict = dict(sorted({i: dict(sorted(w_dict[i].items(), key=lambda x: x[0])) for i in list(w_dict.keys())}.items(),
-                         key=lambda x: x[0]))
+    b = dict(sorted(b.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
+    cost = dict(sorted(cost.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
+    p = dict(sorted(p.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
+    e = dict(sorted(e.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
+    w_dict = dict(sorted({i: dict(sorted(w_dict[i].items(), key=lambda x: int(x[0][x[0].index('_') + 1]))) for i in
+                          list(w_dict.keys())}.items(),
+                         key=lambda x: int(x[0][x[0].index('_') + 1])))
 
     cost = [cost[i] for i in list(cost.keys())]
     w = [[*list((list(w_dict[key].values())))] for key in list(w_dict.keys())]
@@ -35,7 +37,7 @@ def get_data(json_path):
 
     numberOfRegs, typesOfPlaces = len(data["Regions"]), len(data["Types of basketball courts"])
 
-    return w, b, cost, p, e, T, w_dict, upperBound, totalBudget, totalProjPerYear, numberOfRegs, typesOfPlaces
+    return w, b, cost, p, e, T, w_dict, upperBound, totalBudget, totalProjPerYear, numberOfRegs, typesOfPlaces, maxNumberCourts
 
 
 path = 'GenJSON/data.json'

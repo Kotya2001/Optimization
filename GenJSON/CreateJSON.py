@@ -5,7 +5,7 @@ import json
 
 class GenerateJSON:
 
-    def __init__(self, numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear):
+    def __init__(self, numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear, maxNumberCourts):
         """
 
         :param numberOfRegs: -> int, number of regions
@@ -14,6 +14,7 @@ class GenerateJSON:
         :param upperBound: -> int, maximum number of projects for each regions
         :param totalBudget: -> int, total budget for building courts in regions
         :param totalProjPerYear: -> int, total number of basketball court for each region per year
+        :param maxNumberCourts: -> int, maximum number of basketball courts all types for each region
         """
         self.numberOfRegs = numberOfRegs
         self.typesOfPlaces = typesOfPlaces
@@ -24,6 +25,7 @@ class GenerateJSON:
         self.upperBound = upperBound
         self.totalBudget = totalBudget
         self.totalProjPerYear = totalProjPerYear
+        self.maxNumberCourts = maxNumberCourts
 
     def gap(self):
 
@@ -71,6 +73,7 @@ class GenerateJSON:
                 'Limit on the number of projects per year': self.totalProjPerYear,
                 'Total budget': self.totalBudget,
                 'The maximum number of basketball courts in the region per year': self.upperBound,
+                'The maximum number of basketball courts all types for each region': self.maxNumberCourts,
                 'Regions': _w,
                 'Types of basketball courts': cost_and_capacity}
 
@@ -78,10 +81,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 8
+numberOfRegs = 34
 typesOfPlaces = 3
 T = 3
-upperBound, totalBudget, totalProjPerYear = 7, 160000000, 3
+upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 5, 160000000, 3, 6
 
-obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear)
+obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear, maxNumberCourts)
 obj.gap()

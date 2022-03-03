@@ -1,15 +1,11 @@
-# from ortools.linear_solver import pywraplp
 from ortools.sat.python import cp_model
-import numpy as np
 
 
 def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudget, totalProjPerYear, numberOfRegs,
-                             typesOfPlaces):
+                             typesOfPlaces, maxNumberCourts):
     years = ['year' + '_' + str(i) for i in range(1, T + 1)]
-    ans = {reg: {court: {year: None for year in years} for court in list(w_dict[reg].keys())} for reg in
-           list(w_dict.keys())}
+    res = []
 
-    # solver = pywraplp.Solver.CreateSolver('SCIP')
     model = cp_model.CpModel()
     variables = []
 
@@ -17,60 +13,46 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
     for t in range(1, T + 1):
         for key in list(w_dict.keys()):
             for k in list(w_dict[key].keys()):
-                # variables.append(solver.IntVar(0, 10, (key + '.' + k + '.' + years[t - 1])))
                 variables.append(model.NewIntVar(0, 10, (key + '.' + k + '.' + years[t - 1])))
 
     # Верхняя граница
     for var in variables:
         model.Add(var <= upperBound)
-        # solver.Add(var <= upperBound)
-
 
     # Ограничения на количесвто объектов в год
-    for i in range(numberOfRegs):
-        for j in range(0, len(variables[i::numberOfRegs]), typesOfPlaces):
-            model.Add(sum(variables[i::numberOfRegs][j:j + typesOfPlaces]) <= totalProjPerYear)
-            # solver.Add(sum(variables[i::numberOfRegs][j:j + typesOfPlaces]) <= totalProjPerYear)
+    for i in range(0, len(variables), numberOfRegs * typesOfPlaces):
+        model.Add(sum(variables[i:i + (numberOfRegs * typesOfPlaces)]) <= totalProjPerYear)
 
     # Ограничения на стоиммость объектов за T лет
-    for i in range(numberOfRegs):
-        ex = []
-        for j in range(0, len(variables[i::numberOfRegs]), typesOfPlaces):
-            ex.append(variables[i::numberOfRegs][j:j + typesOfPlaces])
+    tot = []
+    for i in range(len(variables)):
+        tot.append(variables[i] * cost[i % typesOfPlaces])
 
-        ex = np.array(ex).T
-        model.Add(sum([cost[k] * sum(ex[k, :].tolist()) for k in range(len(ex))]) <= totalBudget)
-        # solver.Add(sum([cost[k] * sum(ex[k, :].tolist()) for k in range(len(ex))]) <= totalBudget)
+    model.Add(sum(tot) <= totalBudget)
 
-    ex = []
-    for i in range(numberOfRegs):
-        for j in range(0, len(variables[i::numberOfRegs]), typesOfPlaces):
-            ex.append(variables[i::numberOfRegs][j:j + typesOfPlaces])
-
-    ex = np.array(ex)
+    vars = dict(sorted({str(var): var for var in variables}.items(), key=lambda x: x[0]))
 
     # Ограничение на максимальное количесвто площадок в каждом регионе
-    for i in range(0, len(ex.T.ravel()), T * typesOfPlaces):
-        model.Add(sum(ex.T.ravel()[i:(T * typesOfPlaces) + i]) <= 6)
-        # solver.Add(sum(ex.T.ravel()[i:(T * typesOfPlaces) + i]) <= 6)
+    for i in range(0, len(list(vars.values())), T * typesOfPlaces):
+        model.Add(sum(list(vars.values())[i: i + (T * typesOfPlaces)]) <= maxNumberCourts)
 
     # Ограничение на колиество баскетболистов
-    for y in range(0, len(ex), T):
-        arr = ex[y:T + y, :]
+    for i in range(0, len(list(vars.values())), T * typesOfPlaces):
+        regs = []
+        v = list(vars.values())[i: i + (T * typesOfPlaces)]
+        for j in range(0, len(v), T):
+            regs.append(sum(v[j:j + T]) * e[int(j / T) % T])
 
-        for i in range(0, len(arr.T.ravel().tolist()), T):
-            res = [e[c] * sum(arr.T.ravel().tolist()[i:i + T]) for c in range(len(e))]
-
-        model.Add(sum(res) <= b[int(y / T)])
-        # solver.Add(sum(res) <= b[int(y / T)])
+        model.Add(sum(regs) <= b[int(i / (T * typesOfPlaces))])
 
     obj = []
 
-    for y in range(0, len(ex), T):
-        arr = ex[y:T + y, :]
-        for t in range(1, T + 1):
-            for j in range(typesOfPlaces):
-                obj.append(int((w[int(y / T)][j] + p[int(y / T)]) * (T + 1 - t) / T) * arr[t - 1][j])
+    for i in range(0, len(list(vars.values())), T * typesOfPlaces):
+        v = list(vars.values())[i: i + (T * typesOfPlaces)]
+        for j in range(0, len(v), T):
+            coef = (w[int(i / (T * typesOfPlaces))][int(j / T) % T] + p[int(i / (T * typesOfPlaces))])
+            for t in range(T):
+                obj.append(coef * v[j:j + T][t] * ((T + 1 - (t + 1)) / T))
 
     model.Maximize(sum(obj))
     solver = cp_model.CpSolver()
@@ -78,17 +60,12 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
     status = solver.Solve(model)
 
     if status == cp_model.OPTIMAL:
+        for key in list(vars.keys()):
+            if int(solver.Value(vars[key])) > 0:
+                reg, court, year = tuple(key.split('.'))
+                res.append((reg, court, year, int(solver.Value(vars[key]))))
 
-        for y in range(0, len(ex), T):
-            arr = ex[y:T + y, :].T
-            for i in range(typesOfPlaces):
-                for t in range(T):
-                    reg, court, year = tuple(str(arr[i, t]).split('.'))
-                    # ans[reg][court][year] = int(arr[i, t].solution_value())
-                    ans[reg][court][year] = int(solver.Value(arr[i, t]))
-
+        ans = {i[0]: {i[1]: {i[2]: i[3]}} for i in res}
         print('Objective value =', solver.ObjectiveValue())
-    # print('Problem solved in %d iterations' % solver.)
-    print('Problem solved in %f milliseconds' % solver.WallTime())
 
     return ans
