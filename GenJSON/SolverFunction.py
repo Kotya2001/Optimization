@@ -25,8 +25,10 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
 
     # Ограничения на стоиммость объектов за T лет
     tot = []
-    for i in range(len(variables)):
-        tot.append(variables[i] * cost[i % typesOfPlaces])
+    for i in range(0, len(variables), typesOfPlaces):
+        l = variables[i: i + typesOfPlaces]
+        for j in range(len(l)):
+            tot.append(l[j] * cost[int(i / typesOfPlaces) % typesOfPlaces][j])
 
     model.Add(sum(tot) <= totalBudget)
 

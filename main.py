@@ -9,25 +9,36 @@ def get_data(json_path):
     T = data["Periods"]
     maxNumberCourts = data['The maximum number of basketball courts all types for each region']
 
-    w_dict = {i: data["Regions"][i]["Priority of basketball court"] for i in
-              list(data["Regions"].keys())}
+    w_dict = {i: {
+        j: data["Regions"][i]["Type of basketball court"][j]["Priority"]
+        for
+        j in list(data["Regions"][i]["Type of basketball court"].keys())
+    } for i in
+        list(data["Regions"].keys())}
     b = {i: data["Regions"][i]["Number of players"] for i in
          list(data["Regions"].keys())}
-    cost = {i: data["Types of basketball courts"][i]["Cost"] for i in list(data["Types of basketball courts"].keys())}
+    cost = {
+        i: {j: data["Regions"][i]["Type of basketball court"][j]["cost"]
+            for
+            j in list(data["Regions"][i]["Type of basketball court"].keys())
+            } for i in
+        list(data["Regions"].keys())}
     e = {i: data["Types of basketball courts"][i]["Capacity"] for i in list(data["Types of basketball courts"].keys())}
     p = {i: data["Regions"][i]["Rank"] for i in
          list(data["Regions"].keys())}
 
     # Сортируем ключи json, чтобы учесть неупорядоченность введенных данных
     b = dict(sorted(b.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
-    cost = dict(sorted(cost.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
+    cost = dict(sorted({i: dict(sorted(cost[i].items(), key=lambda x: int(x[0][x[0].index('_') + 1]))) for i in
+                        list(cost.keys())}.items(),
+                       key=lambda x: int(x[0][x[0].index('_') + 1])))
     p = dict(sorted(p.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
     e = dict(sorted(e.items(), key=lambda x: int(x[0][x[0].index('_') + 1])))
     w_dict = dict(sorted({i: dict(sorted(w_dict[i].items(), key=lambda x: int(x[0][x[0].index('_') + 1]))) for i in
                           list(w_dict.keys())}.items(),
                          key=lambda x: int(x[0][x[0].index('_') + 1])))
 
-    cost = [cost[i] for i in list(cost.keys())]
+    cost = [[*list((list(cost[key].values())))] for key in list(cost.keys())]
     w = [[*list((list(w_dict[key].values())))] for key in list(w_dict.keys())]
     e = [e[i] for i in list(e.keys())]
     p = [p[i] for i in list(p.keys())]

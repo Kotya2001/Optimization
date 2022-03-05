@@ -39,8 +39,8 @@ class GenerateJSON:
             self.b[i] = int(np.random.randint(3245, 10001, (1, 1))[0][0])
 
         # Словарь стоимостей типов площадок
-        _cost = {'Type of basketball court' + '_' + str(i): random.randint(12000000, 20000000) for i in
-                 range(1, self.typesOfPlaces + 1)}
+        # _cost = {'Type of basketball court' + '_' + str(i): random.randint(12000000, 20000000) for i in
+        #          range(1, self.typesOfPlaces + 1)}
 
         # Словарь рагов регионов
         _p = {self.namesOfRegs[j]: {'Rank': random.randint(1, 11)} for j in range(len(self.namesOfRegs))}
@@ -49,13 +49,13 @@ class GenerateJSON:
         _e = {'Type of basketball court' + '_' + str(e): random.randint(51, 142) for e in range(1, self.typesOfPlaces + 1)}
 
         # Словарь приориттностей для каждого региона
-        _w = {name: {'Priority of basketball court': {}} for name in self.namesOfRegs}
+        _w = {name: {'Type of basketball court': {}} for name in self.namesOfRegs}
         w_keys = list(_w.keys())
         squared = ['Type of basketball court' + '_' + str(j) for j in range(1, self.typesOfPlaces + 1)]
 
         for i in range(len(w_keys)):
             for j in range(len(squared)):
-                _w[w_keys[i]]['Priority of basketball court'][squared[j]] = int(self.w[i][j])
+                _w[w_keys[i]]['Type of basketball court'][squared[j]] = {'Priority': int(self.w[i][j]), 'cost': random.randint(12000000, 20000000)}
 
         # Словарь количества баскетболистов для каждого региона
         _b = {name: {'Number of players': None} for name in self.namesOfRegs}
@@ -67,7 +67,7 @@ class GenerateJSON:
             _w[key].update(_b[key])
             _w[key].update(_p[key])
 
-        cost_and_capacity = {i: {"Cost": _cost[i], "Capacity": _e[i]} for i in list(_cost.keys())}
+        cost_and_capacity = {i: {"Capacity": _e[i]} for i in list(_e.keys())}
 
         data = {'Periods': self.T,
                 'Limit on the number of projects per year': self.totalProjPerYear,
@@ -81,10 +81,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 34
+numberOfRegs = 7
 typesOfPlaces = 3
 T = 3
-upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 5, 160000000, 3, 6
+upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 5, 160000000, 3, 7
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear, maxNumberCourts)
 obj.gap()
