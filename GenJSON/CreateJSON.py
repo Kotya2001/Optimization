@@ -45,6 +45,9 @@ class GenerateJSON:
         # Словарь рагов регионов
         _p = {self.namesOfRegs[j]: {'Rank': random.randint(1, 11)} for j in range(len(self.namesOfRegs))}
 
+        # Бюджет региона на строительство объектов
+        _a = {self.namesOfRegs[j]: {'Regs budget': random.randint(5000000, 7500000)} for j in range(len(self.namesOfRegs))}
+
         # Словарь вмещаемости количества людей для каждого типа площадки
         _e = {'Type of basketball court' + '_' + str(e): random.randint(51, 142) for e in range(1, self.typesOfPlaces + 1)}
 
@@ -55,7 +58,9 @@ class GenerateJSON:
 
         for i in range(len(w_keys)):
             for j in range(len(squared)):
-                _w[w_keys[i]]['Type of basketball court'][squared[j]] = {'Priority': int(self.w[i][j]), 'cost': random.randint(12000000, 20000000)}
+                _w[w_keys[i]]['Type of basketball court'][squared[j]] = {'Priority': int(self.w[i][j]), 'cost': random.randint(12000000, 20000000),
+                                                                         'Regional costs': int(_a[w_keys[i]]['Regs '
+                                                                                                             'budget'] * (1 / self.typesOfPlaces))}
 
         # Словарь количества баскетболистов для каждого региона
         _b = {name: {'Number of players': None} for name in self.namesOfRegs}
@@ -66,6 +71,7 @@ class GenerateJSON:
         for key in list(_w.keys()):
             _w[key].update(_b[key])
             _w[key].update(_p[key])
+            _w[key].update(_a[key])
 
         cost_and_capacity = {i: {"Capacity": _e[i]} for i in list(_e.keys())}
 
@@ -81,10 +87,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 81
-typesOfPlaces = 17
+numberOfRegs = 21
+typesOfPlaces = 3
 T = 3
-upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 9, 160000000, 16, 9
+upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 4, 160000000, 3, 5
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear, maxNumberCourts)
 obj.gap()

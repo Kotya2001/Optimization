@@ -1,7 +1,7 @@
 from ortools.sat.python import cp_model
 
 
-def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudget, totalProjPerYear, numberOfRegs,
+def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, a, u, upperBound, totalBudget, totalProjPerYear, numberOfRegs,
                              typesOfPlaces, maxNumberCourts):
     years = ['year' + '_' + str(i) for i in range(1, T + 1)]
     res = []
@@ -48,6 +48,15 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
             regs.append(sum(v[j:j + T]) * e[int(j / T) % T])
 
         model.Add(sum(regs) <= b[int(i / (T * typesOfPlaces))])
+
+    # Ограничение на затраты регионов
+    for i in range(0, len(list(vars.values())), T * typesOfPlaces):
+        regs = []
+        v = list(vars.values())[i: i + (T * typesOfPlaces)]
+        for j in range(0, len(v), T):
+            regs.append(sum(v[j:j + T]) * u[int(i / (T * typesOfPlaces) % (T * typesOfPlaces))][int(j / T)])
+
+        model.Add(sum(regs) <= a[int(i / (T * typesOfPlaces))])
 
     obj = []
 
