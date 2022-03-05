@@ -1,482 +1,3434 @@
 {
-    "Periods": 3,
-    "Limit on the number of projects per year": 3,
-    "Total budget": 160000000,
-    "The maximum number of basketball courts in the region per year": 4,
-    "The maximum number of basketball courts all types for each region": 5,
+    "Periods": 9,
+    "Limit on the number of projects per year": 24,
+    "Total budget": 180000000,
+    "The maximum number of basketball courts in the region per year": 6,
+    "The maximum number of basketball courts all types for each region": 9,
     "Regions": {
         "Region_1": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 9,
-                    "cost": 18677874,
-                    "Regional costs": 2107282
+                    "Priority": 10,
+                    "cost": 18565785,
+                    "Regional costs": 5175577
                 },
                 "Type of basketball court_2": {
-                    "Priority": 4,
-                    "cost": 12099156,
-                    "Regional costs": 2107282
+                    "Priority": 2,
+                    "cost": 13232722,
+                    "Regional costs": 3679319
                 },
                 "Type of basketball court_3": {
-                    "Priority": 6,
-                    "cost": 15110525,
-                    "Regional costs": 2107282
+                    "Priority": 9,
+                    "cost": 14929654,
+                    "Regional costs": 3022401
+                },
+                "Type of basketball court_4": {
+                    "Priority": 5,
+                    "cost": 13374808,
+                    "Regional costs": 4746142
+                },
+                "Type of basketball court_5": {
+                    "Priority": 13,
+                    "cost": 16514162,
+                    "Regional costs": 4645061
+                },
+                "Type of basketball court_6": {
+                    "Priority": 12,
+                    "cost": 14235011,
+                    "Regional costs": 4079093
+                },
+                "Type of basketball court_7": {
+                    "Priority": 13,
+                    "cost": 18023003,
+                    "Regional costs": 3872978
                 }
             },
-            "Number of players": 7249,
-            "Rank": 6,
-            "Regs budget": 6321846
+            "Number of players": 8447,
+            "Rank": 5,
+            "Regs budget": 5695702
         },
         "Region_2": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 12,
-                    "cost": 12240731,
-                    "Regional costs": 1982447
+                    "Priority": 1,
+                    "cost": 15537899,
+                    "Regional costs": 4252575
                 },
                 "Type of basketball court_2": {
-                    "Priority": 1,
-                    "cost": 13046650,
-                    "Regional costs": 1982447
+                    "Priority": 8,
+                    "cost": 12362639,
+                    "Regional costs": 5041996
                 },
                 "Type of basketball court_3": {
-                    "Priority": 3,
-                    "cost": 14587651,
-                    "Regional costs": 1982447
+                    "Priority": 10,
+                    "cost": 18478160,
+                    "Regional costs": 4856074
+                },
+                "Type of basketball court_4": {
+                    "Priority": 2,
+                    "cost": 12910912,
+                    "Regional costs": 5084221
+                },
+                "Type of basketball court_5": {
+                    "Priority": 11,
+                    "cost": 16222864,
+                    "Regional costs": 4548488
+                },
+                "Type of basketball court_6": {
+                    "Priority": 12,
+                    "cost": 16924302,
+                    "Regional costs": 4791309
+                },
+                "Type of basketball court_7": {
+                    "Priority": 7,
+                    "cost": 16655652,
+                    "Regional costs": 4481547
                 }
             },
-            "Number of players": 5230,
-            "Rank": 10,
-            "Regs budget": 5947343
+            "Number of players": 7032,
+            "Rank": 8,
+            "Regs budget": 5522890
         },
         "Region_3": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 7,
-                    "cost": 15601555,
-                    "Regional costs": 1757639
+                    "Priority": 17,
+                    "cost": 13794811,
+                    "Regional costs": 3675136
                 },
                 "Type of basketball court_2": {
-                    "Priority": 16,
-                    "cost": 18434000,
-                    "Regional costs": 1757639
+                    "Priority": 13,
+                    "cost": 14790785,
+                    "Regional costs": 3401889
                 },
                 "Type of basketball court_3": {
-                    "Priority": 2,
-                    "cost": 15398683,
-                    "Regional costs": 1757639
+                    "Priority": 14,
+                    "cost": 19331979,
+                    "Regional costs": 4466272
+                },
+                "Type of basketball court_4": {
+                    "Priority": 17,
+                    "cost": 15810075,
+                    "Regional costs": 4083179
+                },
+                "Type of basketball court_5": {
+                    "Priority": 6,
+                    "cost": 17719530,
+                    "Regional costs": 3845188
+                },
+                "Type of basketball court_6": {
+                    "Priority": 7,
+                    "cost": 12022819,
+                    "Regional costs": 4082350
+                },
+                "Type of basketball court_7": {
+                    "Priority": 9,
+                    "cost": 17756792,
+                    "Regional costs": 4733474
                 }
             },
-            "Number of players": 9285,
-            "Rank": 1,
-            "Regs budget": 5272919
+            "Number of players": 5577,
+            "Rank": 3,
+            "Regs budget": 6110727
         },
         "Region_4": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 12,
-                    "cost": 13056603,
-                    "Regional costs": 2161552
+                    "Priority": 9,
+                    "cost": 14182252,
+                    "Regional costs": 3611193
                 },
                 "Type of basketball court_2": {
-                    "Priority": 2,
-                    "cost": 15323768,
-                    "Regional costs": 2161552
+                    "Priority": 1,
+                    "cost": 14039326,
+                    "Regional costs": 3164616
                 },
                 "Type of basketball court_3": {
-                    "Priority": 10,
-                    "cost": 12116222,
-                    "Regional costs": 2161552
+                    "Priority": 1,
+                    "cost": 16394720,
+                    "Regional costs": 4151480
+                },
+                "Type of basketball court_4": {
+                    "Priority": 11,
+                    "cost": 12306793,
+                    "Regional costs": 4027729
+                },
+                "Type of basketball court_5": {
+                    "Priority": 12,
+                    "cost": 16059394,
+                    "Regional costs": 4349696
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 15874122,
+                    "Regional costs": 3622820
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 13720332,
+                    "Regional costs": 4042898
                 }
             },
-            "Number of players": 8267,
-            "Rank": 2,
-            "Regs budget": 6484656
+            "Number of players": 5793,
+            "Rank": 3,
+            "Regs budget": 6378185
         },
         "Region_5": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 15,
-                    "cost": 17854595,
-                    "Regional costs": 2275880
+                    "Priority": 13,
+                    "cost": 17047972,
+                    "Regional costs": 4671889
                 },
                 "Type of basketball court_2": {
-                    "Priority": 12,
-                    "cost": 16581334,
-                    "Regional costs": 2275880
+                    "Priority": 17,
+                    "cost": 18580525,
+                    "Regional costs": 4289130
                 },
                 "Type of basketball court_3": {
-                    "Priority": 4,
-                    "cost": 17269000,
-                    "Regional costs": 2275880
+                    "Priority": 8,
+                    "cost": 16181460,
+                    "Regional costs": 4409348
+                },
+                "Type of basketball court_4": {
+                    "Priority": 17,
+                    "cost": 18509884,
+                    "Regional costs": 3176911
+                },
+                "Type of basketball court_5": {
+                    "Priority": 14,
+                    "cost": 18816552,
+                    "Regional costs": 4563990
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 18496093,
+                    "Regional costs": 4055740
+                },
+                "Type of basketball court_7": {
+                    "Priority": 8,
+                    "cost": 17340792,
+                    "Regional costs": 4493467
                 }
             },
-            "Number of players": 9216,
-            "Rank": 6,
-            "Regs budget": 6827640
+            "Number of players": 8745,
+            "Rank": 3,
+            "Regs budget": 5068201
         },
         "Region_6": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 16,
-                    "cost": 19878245,
-                    "Regional costs": 2213016
+                    "Priority": 14,
+                    "cost": 17319464,
+                    "Regional costs": 5116344
                 },
                 "Type of basketball court_2": {
-                    "Priority": 17,
-                    "cost": 12190309,
-                    "Regional costs": 2213016
+                    "Priority": 16,
+                    "cost": 15503881,
+                    "Regional costs": 4985133
                 },
                 "Type of basketball court_3": {
-                    "Priority": 12,
-                    "cost": 16338014,
-                    "Regional costs": 2213016
+                    "Priority": 7,
+                    "cost": 17880561,
+                    "Regional costs": 4320481
+                },
+                "Type of basketball court_4": {
+                    "Priority": 9,
+                    "cost": 12450936,
+                    "Regional costs": 3643415
+                },
+                "Type of basketball court_5": {
+                    "Priority": 5,
+                    "cost": 19320808,
+                    "Regional costs": 5090498
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 14736464,
+                    "Regional costs": 3971043
+                },
+                "Type of basketball court_7": {
+                    "Priority": 6,
+                    "cost": 19614434,
+                    "Regional costs": 4502412
                 }
             },
-            "Number of players": 9517,
-            "Rank": 4,
-            "Regs budget": 6639049
+            "Number of players": 5651,
+            "Rank": 3,
+            "Regs budget": 5347219
         },
         "Region_7": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 12,
-                    "cost": 12663382,
-                    "Regional costs": 2313908
+                    "Priority": 3,
+                    "cost": 18281802,
+                    "Regional costs": 3018432
                 },
                 "Type of basketball court_2": {
-                    "Priority": 4,
-                    "cost": 13213274,
-                    "Regional costs": 2313908
+                    "Priority": 12,
+                    "cost": 12737345,
+                    "Regional costs": 4615708
                 },
                 "Type of basketball court_3": {
-                    "Priority": 7,
-                    "cost": 14518497,
-                    "Regional costs": 2313908
+                    "Priority": 3,
+                    "cost": 15341942,
+                    "Regional costs": 3619563
+                },
+                "Type of basketball court_4": {
+                    "Priority": 12,
+                    "cost": 15932891,
+                    "Regional costs": 3250269
+                },
+                "Type of basketball court_5": {
+                    "Priority": 11,
+                    "cost": 17778199,
+                    "Regional costs": 3917374
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 13930186,
+                    "Regional costs": 3630408
+                },
+                "Type of basketball court_7": {
+                    "Priority": 13,
+                    "cost": 19852306,
+                    "Regional costs": 3559994
                 }
             },
-            "Number of players": 6985,
-            "Rank": 5,
-            "Regs budget": 6941724
+            "Number of players": 7038,
+            "Rank": 8,
+            "Regs budget": 7087220
         },
         "Region_8": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 8,
-                    "cost": 13706083,
-                    "Regional costs": 2332431
+                    "Priority": 5,
+                    "cost": 14447447,
+                    "Regional costs": 3514300
                 },
                 "Type of basketball court_2": {
-                    "Priority": 17,
-                    "cost": 12415156,
-                    "Regional costs": 2332431
+                    "Priority": 11,
+                    "cost": 14196518,
+                    "Regional costs": 3915350
                 },
                 "Type of basketball court_3": {
-                    "Priority": 14,
-                    "cost": 15142402,
-                    "Regional costs": 2332431
+                    "Priority": 6,
+                    "cost": 12205775,
+                    "Regional costs": 3050921
+                },
+                "Type of basketball court_4": {
+                    "Priority": 4,
+                    "cost": 17236045,
+                    "Regional costs": 4111035
+                },
+                "Type of basketball court_5": {
+                    "Priority": 2,
+                    "cost": 19997229,
+                    "Regional costs": 5175164
+                },
+                "Type of basketball court_6": {
+                    "Priority": 3,
+                    "cost": 18649126,
+                    "Regional costs": 3523848
+                },
+                "Type of basketball court_7": {
+                    "Priority": 2,
+                    "cost": 15096808,
+                    "Regional costs": 4605504
                 }
             },
-            "Number of players": 6876,
-            "Rank": 8,
-            "Regs budget": 6997295
+            "Number of players": 4259,
+            "Rank": 9,
+            "Regs budget": 5669201
         },
         "Region_9": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 5,
-                    "cost": 18686205,
-                    "Regional costs": 2409903
+                    "Priority": 17,
+                    "cost": 16939178,
+                    "Regional costs": 3144244
                 },
                 "Type of basketball court_2": {
-                    "Priority": 17,
-                    "cost": 15859497,
-                    "Regional costs": 2409903
+                    "Priority": 16,
+                    "cost": 14815203,
+                    "Regional costs": 4056501
                 },
                 "Type of basketball court_3": {
                     "Priority": 7,
-                    "cost": 14152359,
-                    "Regional costs": 2409903
+                    "cost": 14588626,
+                    "Regional costs": 4318261
+                },
+                "Type of basketball court_4": {
+                    "Priority": 13,
+                    "cost": 19529296,
+                    "Regional costs": 3473660
+                },
+                "Type of basketball court_5": {
+                    "Priority": 3,
+                    "cost": 17884951,
+                    "Regional costs": 4786105
+                },
+                "Type of basketball court_6": {
+                    "Priority": 11,
+                    "cost": 16554989,
+                    "Regional costs": 4901101
+                },
+                "Type of basketball court_7": {
+                    "Priority": 3,
+                    "cost": 19710011,
+                    "Regional costs": 4104855
                 }
             },
-            "Number of players": 5745,
-            "Rank": 9,
-            "Regs budget": 7229710
+            "Number of players": 9595,
+            "Rank": 5,
+            "Regs budget": 6098766
         },
         "Region_10": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 11,
-                    "cost": 12194111,
-                    "Regional costs": 1901633
+                    "Priority": 12,
+                    "cost": 16787939,
+                    "Regional costs": 4413563
                 },
                 "Type of basketball court_2": {
-                    "Priority": 1,
-                    "cost": 18096402,
-                    "Regional costs": 1901633
+                    "Priority": 9,
+                    "cost": 14348294,
+                    "Regional costs": 4948425
                 },
                 "Type of basketball court_3": {
-                    "Priority": 4,
-                    "cost": 14765810,
-                    "Regional costs": 1901633
+                    "Priority": 8,
+                    "cost": 19738623,
+                    "Regional costs": 4246260
+                },
+                "Type of basketball court_4": {
+                    "Priority": 2,
+                    "cost": 17986142,
+                    "Regional costs": 3913389
+                },
+                "Type of basketball court_5": {
+                    "Priority": 14,
+                    "cost": 18399611,
+                    "Regional costs": 4658205
+                },
+                "Type of basketball court_6": {
+                    "Priority": 8,
+                    "cost": 13872490,
+                    "Regional costs": 3129545
+                },
+                "Type of basketball court_7": {
+                    "Priority": 6,
+                    "cost": 19341080,
+                    "Regional costs": 4072355
                 }
             },
-            "Number of players": 8424,
-            "Rank": 11,
-            "Regs budget": 5704901
+            "Number of players": 9110,
+            "Rank": 6,
+            "Regs budget": 6628460
         },
         "Region_11": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 14,
-                    "cost": 13700221,
-                    "Regional costs": 2117068
+                    "Priority": 15,
+                    "cost": 18112408,
+                    "Regional costs": 4487249
                 },
                 "Type of basketball court_2": {
-                    "Priority": 1,
-                    "cost": 17919286,
-                    "Regional costs": 2117068
+                    "Priority": 2,
+                    "cost": 19243949,
+                    "Regional costs": 4520016
                 },
                 "Type of basketball court_3": {
-                    "Priority": 10,
-                    "cost": 13050862,
-                    "Regional costs": 2117068
+                    "Priority": 3,
+                    "cost": 17518419,
+                    "Regional costs": 3849135
+                },
+                "Type of basketball court_4": {
+                    "Priority": 3,
+                    "cost": 15681363,
+                    "Regional costs": 4671791
+                },
+                "Type of basketball court_5": {
+                    "Priority": 2,
+                    "cost": 13960891,
+                    "Regional costs": 4677443
+                },
+                "Type of basketball court_6": {
+                    "Priority": 12,
+                    "cost": 16236158,
+                    "Regional costs": 4996004
+                },
+                "Type of basketball court_7": {
+                    "Priority": 15,
+                    "cost": 17705577,
+                    "Regional costs": 3244517
                 }
             },
-            "Number of players": 5410,
-            "Rank": 7,
-            "Regs budget": 6351205
+            "Number of players": 3941,
+            "Rank": 1,
+            "Regs budget": 7129715
         },
         "Region_12": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 8,
-                    "cost": 18101742,
-                    "Regional costs": 2384448
+                    "Priority": 7,
+                    "cost": 19341210,
+                    "Regional costs": 4647159
                 },
                 "Type of basketball court_2": {
-                    "Priority": 3,
-                    "cost": 15181668,
-                    "Regional costs": 2384448
+                    "Priority": 9,
+                    "cost": 14123655,
+                    "Regional costs": 4536507
                 },
                 "Type of basketball court_3": {
-                    "Priority": 12,
-                    "cost": 13107996,
-                    "Regional costs": 2384448
+                    "Priority": 5,
+                    "cost": 15110138,
+                    "Regional costs": 4644651
+                },
+                "Type of basketball court_4": {
+                    "Priority": 15,
+                    "cost": 16579518,
+                    "Regional costs": 4920006
+                },
+                "Type of basketball court_5": {
+                    "Priority": 1,
+                    "cost": 17938917,
+                    "Regional costs": 4421281
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 18214864,
+                    "Regional costs": 3937759
+                },
+                "Type of basketball court_7": {
+                    "Priority": 14,
+                    "cost": 16938299,
+                    "Regional costs": 3380739
                 }
             },
-            "Number of players": 7926,
-            "Rank": 6,
-            "Regs budget": 7153345
+            "Number of players": 5555,
+            "Rank": 8,
+            "Regs budget": 5598320
         },
         "Region_13": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 8,
-                    "cost": 19988133,
-                    "Regional costs": 1852814
+                    "Priority": 9,
+                    "cost": 19672695,
+                    "Regional costs": 3584956
                 },
                 "Type of basketball court_2": {
-                    "Priority": 9,
-                    "cost": 16103268,
-                    "Regional costs": 1852814
+                    "Priority": 10,
+                    "cost": 13251242,
+                    "Regional costs": 5191335
                 },
                 "Type of basketball court_3": {
-                    "Priority": 7,
-                    "cost": 12161452,
-                    "Regional costs": 1852814
+                    "Priority": 15,
+                    "cost": 16946731,
+                    "Regional costs": 4745808
+                },
+                "Type of basketball court_4": {
+                    "Priority": 4,
+                    "cost": 18006543,
+                    "Regional costs": 3673539
+                },
+                "Type of basketball court_5": {
+                    "Priority": 2,
+                    "cost": 14393979,
+                    "Regional costs": 4096845
+                },
+                "Type of basketball court_6": {
+                    "Priority": 8,
+                    "cost": 17837019,
+                    "Regional costs": 3805424
+                },
+                "Type of basketball court_7": {
+                    "Priority": 15,
+                    "cost": 12651255,
+                    "Regional costs": 4236522
                 }
             },
-            "Number of players": 8697,
-            "Rank": 9,
-            "Regs budget": 5558444
+            "Number of players": 9511,
+            "Rank": 4,
+            "Regs budget": 7476476
         },
         "Region_14": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 10,
-                    "cost": 18074375,
-                    "Regional costs": 2314954
+                    "Priority": 12,
+                    "cost": 16794329,
+                    "Regional costs": 3839066
                 },
                 "Type of basketball court_2": {
-                    "Priority": 11,
-                    "cost": 14073417,
-                    "Regional costs": 2314954
+                    "Priority": 9,
+                    "cost": 15824006,
+                    "Regional costs": 3523862
                 },
                 "Type of basketball court_3": {
+                    "Priority": 11,
+                    "cost": 19250176,
+                    "Regional costs": 4283419
+                },
+                "Type of basketball court_4": {
+                    "Priority": 4,
+                    "cost": 14217018,
+                    "Regional costs": 4550968
+                },
+                "Type of basketball court_5": {
+                    "Priority": 4,
+                    "cost": 17503901,
+                    "Regional costs": 5162617
+                },
+                "Type of basketball court_6": {
                     "Priority": 2,
-                    "cost": 14863582,
-                    "Regional costs": 2314954
+                    "cost": 13036471,
+                    "Regional costs": 4936608
+                },
+                "Type of basketball court_7": {
+                    "Priority": 16,
+                    "cost": 13217689,
+                    "Regional costs": 3692520
                 }
             },
-            "Number of players": 7384,
-            "Rank": 8,
-            "Regs budget": 6944863
+            "Number of players": 8028,
+            "Rank": 2,
+            "Regs budget": 5930334
         },
         "Region_15": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 3,
-                    "cost": 18420373,
-                    "Regional costs": 2490823
+                    "Priority": 14,
+                    "cost": 16541884,
+                    "Regional costs": 4245006
                 },
                 "Type of basketball court_2": {
-                    "Priority": 15,
-                    "cost": 14124862,
-                    "Regional costs": 2490823
+                    "Priority": 16,
+                    "cost": 19763912,
+                    "Regional costs": 3596755
                 },
                 "Type of basketball court_3": {
-                    "Priority": 7,
-                    "cost": 18554049,
-                    "Regional costs": 2490823
+                    "Priority": 13,
+                    "cost": 15484967,
+                    "Regional costs": 4873137
+                },
+                "Type of basketball court_4": {
+                    "Priority": 6,
+                    "cost": 18136553,
+                    "Regional costs": 4671798
+                },
+                "Type of basketball court_5": {
+                    "Priority": 8,
+                    "cost": 16731948,
+                    "Regional costs": 3858168
+                },
+                "Type of basketball court_6": {
+                    "Priority": 3,
+                    "cost": 18539525,
+                    "Regional costs": 4901318
+                },
+                "Type of basketball court_7": {
+                    "Priority": 2,
+                    "cost": 18651634,
+                    "Regional costs": 3358215
                 }
             },
-            "Number of players": 7463,
-            "Rank": 8,
-            "Regs budget": 7472471
+            "Number of players": 9987,
+            "Rank": 6,
+            "Regs budget": 5448878
         },
         "Region_16": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 3,
-                    "cost": 12334949,
-                    "Regional costs": 2174165
+                    "Priority": 4,
+                    "cost": 13562650,
+                    "Regional costs": 3523480
                 },
                 "Type of basketball court_2": {
-                    "Priority": 8,
-                    "cost": 13316407,
-                    "Regional costs": 2174165
+                    "Priority": 7,
+                    "cost": 14311689,
+                    "Regional costs": 5184604
                 },
                 "Type of basketball court_3": {
-                    "Priority": 2,
-                    "cost": 16664281,
-                    "Regional costs": 2174165
+                    "Priority": 17,
+                    "cost": 17072742,
+                    "Regional costs": 3161780
+                },
+                "Type of basketball court_4": {
+                    "Priority": 12,
+                    "cost": 15142467,
+                    "Regional costs": 4050482
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 15606812,
+                    "Regional costs": 3705351
+                },
+                "Type of basketball court_6": {
+                    "Priority": 7,
+                    "cost": 13668507,
+                    "Regional costs": 3162259
+                },
+                "Type of basketball court_7": {
+                    "Priority": 1,
+                    "cost": 18062324,
+                    "Regional costs": 3875158
                 }
             },
-            "Number of players": 6793,
-            "Rank": 7,
-            "Regs budget": 6522495
+            "Number of players": 5292,
+            "Rank": 1,
+            "Regs budget": 5116108
         },
         "Region_17": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 12,
-                    "cost": 15488387,
-                    "Regional costs": 2195724
+                    "Priority": 16,
+                    "cost": 14392613,
+                    "Regional costs": 4219344
                 },
                 "Type of basketball court_2": {
-                    "Priority": 5,
-                    "cost": 18113160,
-                    "Regional costs": 2195724
+                    "Priority": 6,
+                    "cost": 15947385,
+                    "Regional costs": 4103992
                 },
                 "Type of basketball court_3": {
-                    "Priority": 9,
-                    "cost": 18213604,
-                    "Regional costs": 2195724
+                    "Priority": 3,
+                    "cost": 19000149,
+                    "Regional costs": 3176002
+                },
+                "Type of basketball court_4": {
+                    "Priority": 14,
+                    "cost": 13342526,
+                    "Regional costs": 3285088
+                },
+                "Type of basketball court_5": {
+                    "Priority": 10,
+                    "cost": 19826096,
+                    "Regional costs": 3473426
+                },
+                "Type of basketball court_6": {
+                    "Priority": 16,
+                    "cost": 14971350,
+                    "Regional costs": 3445491
+                },
+                "Type of basketball court_7": {
+                    "Priority": 16,
+                    "cost": 15153229,
+                    "Regional costs": 4035977
                 }
             },
-            "Number of players": 3378,
-            "Rank": 1,
-            "Regs budget": 6587173
+            "Number of players": 4532,
+            "Rank": 10,
+            "Regs budget": 7332578
         },
         "Region_18": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 16,
-                    "cost": 15874535,
-                    "Regional costs": 2208432
+                    "Priority": 1,
+                    "cost": 16702804,
+                    "Regional costs": 3574431
                 },
                 "Type of basketball court_2": {
-                    "Priority": 4,
-                    "cost": 15233867,
-                    "Regional costs": 2208432
+                    "Priority": 3,
+                    "cost": 15072239,
+                    "Regional costs": 3913352
                 },
                 "Type of basketball court_3": {
-                    "Priority": 5,
-                    "cost": 14475388,
-                    "Regional costs": 2208432
+                    "Priority": 14,
+                    "cost": 17763869,
+                    "Regional costs": 5123255
+                },
+                "Type of basketball court_4": {
+                    "Priority": 15,
+                    "cost": 15968728,
+                    "Regional costs": 4244972
+                },
+                "Type of basketball court_5": {
+                    "Priority": 11,
+                    "cost": 14383834,
+                    "Regional costs": 4364924
+                },
+                "Type of basketball court_6": {
+                    "Priority": 3,
+                    "cost": 17673897,
+                    "Regional costs": 4372396
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 14784152,
+                    "Regional costs": 3353190
                 }
             },
-            "Number of players": 5711,
-            "Rank": 7,
-            "Regs budget": 6625298
+            "Number of players": 4697,
+            "Rank": 11,
+            "Regs budget": 7297063
         },
         "Region_19": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 9,
-                    "cost": 13178104,
-                    "Regional costs": 2345764
+                    "Priority": 14,
+                    "cost": 19413046,
+                    "Regional costs": 3152353
                 },
                 "Type of basketball court_2": {
-                    "Priority": 8,
-                    "cost": 17545714,
-                    "Regional costs": 2345764
+                    "Priority": 9,
+                    "cost": 15395226,
+                    "Regional costs": 4425577
                 },
                 "Type of basketball court_3": {
-                    "Priority": 6,
-                    "cost": 18169592,
-                    "Regional costs": 2345764
+                    "Priority": 10,
+                    "cost": 14045329,
+                    "Regional costs": 3940334
+                },
+                "Type of basketball court_4": {
+                    "Priority": 8,
+                    "cost": 18045177,
+                    "Regional costs": 4272366
+                },
+                "Type of basketball court_5": {
+                    "Priority": 10,
+                    "cost": 16238952,
+                    "Regional costs": 3218304
+                },
+                "Type of basketball court_6": {
+                    "Priority": 13,
+                    "cost": 12605452,
+                    "Regional costs": 3097541
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 13132212,
+                    "Regional costs": 4550819
                 }
             },
-            "Number of players": 5053,
-            "Rank": 5,
-            "Regs budget": 7037293
+            "Number of players": 7065,
+            "Rank": 9,
+            "Regs budget": 7019713
         },
         "Region_20": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 9,
-                    "cost": 16461490,
-                    "Regional costs": 2316127
+                    "Priority": 6,
+                    "cost": 19259150,
+                    "Regional costs": 4801654
                 },
                 "Type of basketball court_2": {
-                    "Priority": 3,
-                    "cost": 17292431,
-                    "Regional costs": 2316127
+                    "Priority": 11,
+                    "cost": 15982904,
+                    "Regional costs": 5197890
                 },
                 "Type of basketball court_3": {
-                    "Priority": 16,
-                    "cost": 17244292,
-                    "Regional costs": 2316127
+                    "Priority": 10,
+                    "cost": 18060644,
+                    "Regional costs": 5193022
+                },
+                "Type of basketball court_4": {
+                    "Priority": 3,
+                    "cost": 14777506,
+                    "Regional costs": 3705970
+                },
+                "Type of basketball court_5": {
+                    "Priority": 12,
+                    "cost": 19425506,
+                    "Regional costs": 4566905
+                },
+                "Type of basketball court_6": {
+                    "Priority": 3,
+                    "cost": 19979514,
+                    "Regional costs": 5048482
+                },
+                "Type of basketball court_7": {
+                    "Priority": 15,
+                    "cost": 12446592,
+                    "Regional costs": 3551885
                 }
             },
-            "Number of players": 9956,
+            "Number of players": 9966,
             "Rank": 4,
-            "Regs budget": 6948381
+            "Regs budget": 5255220
         },
         "Region_21": {
             "Type of basketball court": {
                 "Type of basketball court_1": {
-                    "Priority": 15,
-                    "cost": 18959055,
-                    "Regional costs": 2041657
+                    "Priority": 2,
+                    "cost": 18614922,
+                    "Regional costs": 3748879
                 },
                 "Type of basketball court_2": {
+                    "Priority": 17,
+                    "cost": 14459591,
+                    "Regional costs": 3270130
+                },
+                "Type of basketball court_3": {
                     "Priority": 13,
-                    "cost": 14715198,
-                    "Regional costs": 2041657
+                    "cost": 18963201,
+                    "Regional costs": 4949808
+                },
+                "Type of basketball court_4": {
+                    "Priority": 14,
+                    "cost": 14690096,
+                    "Regional costs": 5165599
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 19042308,
+                    "Regional costs": 4273045
+                },
+                "Type of basketball court_6": {
+                    "Priority": 6,
+                    "cost": 15967811,
+                    "Regional costs": 4446527
+                },
+                "Type of basketball court_7": {
+                    "Priority": 5,
+                    "cost": 15429327,
+                    "Regional costs": 4894877
+                }
+            },
+            "Number of players": 7305,
+            "Rank": 9,
+            "Regs budget": 7117868
+        },
+        "Region_22": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 4,
+                    "cost": 19578707,
+                    "Regional costs": 3244123
+                },
+                "Type of basketball court_2": {
+                    "Priority": 11,
+                    "cost": 13151731,
+                    "Regional costs": 3424464
+                },
+                "Type of basketball court_3": {
+                    "Priority": 11,
+                    "cost": 15652805,
+                    "Regional costs": 3243541
+                },
+                "Type of basketball court_4": {
+                    "Priority": 9,
+                    "cost": 12936529,
+                    "Regional costs": 5092217
+                },
+                "Type of basketball court_5": {
+                    "Priority": 10,
+                    "cost": 18274636,
+                    "Regional costs": 4166518
+                },
+                "Type of basketball court_6": {
+                    "Priority": 17,
+                    "cost": 14374224,
+                    "Regional costs": 3178337
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 13232990,
+                    "Regional costs": 4962723
+                }
+            },
+            "Number of players": 5295,
+            "Rank": 5,
+            "Regs budget": 5535450
+        },
+        "Region_23": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 10,
+                    "cost": 17251554,
+                    "Regional costs": 3203504
+                },
+                "Type of basketball court_2": {
+                    "Priority": 17,
+                    "cost": 12812870,
+                    "Regional costs": 3795794
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 14259731,
+                    "Regional costs": 5173799
+                },
+                "Type of basketball court_4": {
+                    "Priority": 7,
+                    "cost": 17206109,
+                    "Regional costs": 3027909
+                },
+                "Type of basketball court_5": {
+                    "Priority": 13,
+                    "cost": 18727862,
+                    "Regional costs": 3571728
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 16933352,
+                    "Regional costs": 3536339
+                },
+                "Type of basketball court_7": {
+                    "Priority": 17,
+                    "cost": 14218985,
+                    "Regional costs": 3500465
+                }
+            },
+            "Number of players": 7176,
+            "Rank": 8,
+            "Regs budget": 5137878
+        },
+        "Region_24": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 13,
+                    "cost": 12000656,
+                    "Regional costs": 5052405
+                },
+                "Type of basketball court_2": {
+                    "Priority": 7,
+                    "cost": 15133649,
+                    "Regional costs": 4043909
+                },
+                "Type of basketball court_3": {
+                    "Priority": 6,
+                    "cost": 14965649,
+                    "Regional costs": 4576991
+                },
+                "Type of basketball court_4": {
+                    "Priority": 6,
+                    "cost": 14080654,
+                    "Regional costs": 4765318
+                },
+                "Type of basketball court_5": {
+                    "Priority": 1,
+                    "cost": 13193006,
+                    "Regional costs": 3281974
+                },
+                "Type of basketball court_6": {
+                    "Priority": 2,
+                    "cost": 15485701,
+                    "Regional costs": 4428661
+                },
+                "Type of basketball court_7": {
+                    "Priority": 8,
+                    "cost": 16977915,
+                    "Regional costs": 3956112
+                }
+            },
+            "Number of players": 9817,
+            "Rank": 2,
+            "Regs budget": 6018748
+        },
+        "Region_25": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 12,
+                    "cost": 12435751,
+                    "Regional costs": 3994154
+                },
+                "Type of basketball court_2": {
+                    "Priority": 4,
+                    "cost": 15196609,
+                    "Regional costs": 3320997
+                },
+                "Type of basketball court_3": {
+                    "Priority": 4,
+                    "cost": 17688091,
+                    "Regional costs": 5008902
+                },
+                "Type of basketball court_4": {
+                    "Priority": 8,
+                    "cost": 13300209,
+                    "Regional costs": 5093051
+                },
+                "Type of basketball court_5": {
+                    "Priority": 7,
+                    "cost": 19058115,
+                    "Regional costs": 4320149
+                },
+                "Type of basketball court_6": {
+                    "Priority": 5,
+                    "cost": 16871819,
+                    "Regional costs": 3037985
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 18406789,
+                    "Regional costs": 4883165
+                }
+            },
+            "Number of players": 4864,
+            "Rank": 11,
+            "Regs budget": 7330831
+        },
+        "Region_26": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 6,
+                    "cost": 12995719,
+                    "Regional costs": 4544221
+                },
+                "Type of basketball court_2": {
+                    "Priority": 10,
+                    "cost": 15082294,
+                    "Regional costs": 3075617
+                },
+                "Type of basketball court_3": {
+                    "Priority": 2,
+                    "cost": 14001519,
+                    "Regional costs": 3278691
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 13385872,
+                    "Regional costs": 4082153
+                },
+                "Type of basketball court_5": {
+                    "Priority": 17,
+                    "cost": 15206346,
+                    "Regional costs": 4149449
+                },
+                "Type of basketball court_6": {
+                    "Priority": 16,
+                    "cost": 16201372,
+                    "Regional costs": 3338899
+                },
+                "Type of basketball court_7": {
+                    "Priority": 9,
+                    "cost": 17931421,
+                    "Regional costs": 4455989
+                }
+            },
+            "Number of players": 4327,
+            "Rank": 9,
+            "Regs budget": 6177885
+        },
+        "Region_27": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 6,
+                    "cost": 19633197,
+                    "Regional costs": 3508694
+                },
+                "Type of basketball court_2": {
+                    "Priority": 9,
+                    "cost": 16837160,
+                    "Regional costs": 4696719
+                },
+                "Type of basketball court_3": {
+                    "Priority": 14,
+                    "cost": 17696045,
+                    "Regional costs": 4981007
+                },
+                "Type of basketball court_4": {
+                    "Priority": 12,
+                    "cost": 17951122,
+                    "Regional costs": 3029789
+                },
+                "Type of basketball court_5": {
+                    "Priority": 1,
+                    "cost": 17669378,
+                    "Regional costs": 4428892
+                },
+                "Type of basketball court_6": {
+                    "Priority": 2,
+                    "cost": 19382552,
+                    "Regional costs": 3942311
+                },
+                "Type of basketball court_7": {
+                    "Priority": 11,
+                    "cost": 18080512,
+                    "Regional costs": 4027152
+                }
+            },
+            "Number of players": 6749,
+            "Rank": 4,
+            "Regs budget": 6071217
+        },
+        "Region_28": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 6,
+                    "cost": 16712998,
+                    "Regional costs": 3183364
+                },
+                "Type of basketball court_2": {
+                    "Priority": 1,
+                    "cost": 16145116,
+                    "Regional costs": 3011356
+                },
+                "Type of basketball court_3": {
+                    "Priority": 7,
+                    "cost": 14897544,
+                    "Regional costs": 4583065
+                },
+                "Type of basketball court_4": {
+                    "Priority": 13,
+                    "cost": 16853722,
+                    "Regional costs": 4728635
+                },
+                "Type of basketball court_5": {
+                    "Priority": 4,
+                    "cost": 14622437,
+                    "Regional costs": 3505957
+                },
+                "Type of basketball court_6": {
+                    "Priority": 14,
+                    "cost": 17438041,
+                    "Regional costs": 4955835
+                },
+                "Type of basketball court_7": {
+                    "Priority": 2,
+                    "cost": 15210829,
+                    "Regional costs": 3601907
+                }
+            },
+            "Number of players": 9898,
+            "Rank": 3,
+            "Regs budget": 5056132
+        },
+        "Region_29": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 13,
+                    "cost": 13241757,
+                    "Regional costs": 4118820
+                },
+                "Type of basketball court_2": {
+                    "Priority": 15,
+                    "cost": 16195543,
+                    "Regional costs": 4150387
+                },
+                "Type of basketball court_3": {
+                    "Priority": 7,
+                    "cost": 12912172,
+                    "Regional costs": 4173314
+                },
+                "Type of basketball court_4": {
+                    "Priority": 17,
+                    "cost": 17407993,
+                    "Regional costs": 3253311
+                },
+                "Type of basketball court_5": {
+                    "Priority": 3,
+                    "cost": 12911497,
+                    "Regional costs": 4479594
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 14153496,
+                    "Regional costs": 3065738
+                },
+                "Type of basketball court_7": {
+                    "Priority": 8,
+                    "cost": 15299043,
+                    "Regional costs": 3342878
+                }
+            },
+            "Number of players": 4831,
+            "Rank": 2,
+            "Regs budget": 6131249
+        },
+        "Region_30": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 11,
+                    "cost": 15717171,
+                    "Regional costs": 4644185
+                },
+                "Type of basketball court_2": {
+                    "Priority": 4,
+                    "cost": 16326581,
+                    "Regional costs": 3404841
+                },
+                "Type of basketball court_3": {
+                    "Priority": 8,
+                    "cost": 18461512,
+                    "Regional costs": 4094108
+                },
+                "Type of basketball court_4": {
+                    "Priority": 2,
+                    "cost": 19743358,
+                    "Regional costs": 3689134
+                },
+                "Type of basketball court_5": {
+                    "Priority": 13,
+                    "cost": 17662983,
+                    "Regional costs": 5158107
+                },
+                "Type of basketball court_6": {
+                    "Priority": 7,
+                    "cost": 12847251,
+                    "Regional costs": 4639505
+                },
+                "Type of basketball court_7": {
+                    "Priority": 13,
+                    "cost": 15710902,
+                    "Regional costs": 4498024
+                }
+            },
+            "Number of players": 5889,
+            "Rank": 4,
+            "Regs budget": 5871307
+        },
+        "Region_31": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 13,
+                    "cost": 15386735,
+                    "Regional costs": 4775898
+                },
+                "Type of basketball court_2": {
+                    "Priority": 15,
+                    "cost": 14313638,
+                    "Regional costs": 3282179
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 14536669,
+                    "Regional costs": 4410067
+                },
+                "Type of basketball court_4": {
+                    "Priority": 2,
+                    "cost": 17193227,
+                    "Regional costs": 3073414
+                },
+                "Type of basketball court_5": {
+                    "Priority": 2,
+                    "cost": 19951647,
+                    "Regional costs": 4370029
+                },
+                "Type of basketball court_6": {
+                    "Priority": 8,
+                    "cost": 14899007,
+                    "Regional costs": 3727684
+                },
+                "Type of basketball court_7": {
+                    "Priority": 10,
+                    "cost": 17444687,
+                    "Regional costs": 3222272
+                }
+            },
+            "Number of players": 8283,
+            "Rank": 3,
+            "Regs budget": 6335153
+        },
+        "Region_32": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 8,
+                    "cost": 14034308,
+                    "Regional costs": 4660194
+                },
+                "Type of basketball court_2": {
+                    "Priority": 12,
+                    "cost": 17166889,
+                    "Regional costs": 3625576
+                },
+                "Type of basketball court_3": {
+                    "Priority": 1,
+                    "cost": 17686784,
+                    "Regional costs": 3884001
+                },
+                "Type of basketball court_4": {
+                    "Priority": 14,
+                    "cost": 19711421,
+                    "Regional costs": 4592126
+                },
+                "Type of basketball court_5": {
+                    "Priority": 12,
+                    "cost": 15460200,
+                    "Regional costs": 3441309
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 18041585,
+                    "Regional costs": 4537341
+                },
+                "Type of basketball court_7": {
+                    "Priority": 13,
+                    "cost": 19072891,
+                    "Regional costs": 3219059
+                }
+            },
+            "Number of players": 4631,
+            "Rank": 6,
+            "Regs budget": 5299685
+        },
+        "Region_33": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 2,
+                    "cost": 15080117,
+                    "Regional costs": 4793756
+                },
+                "Type of basketball court_2": {
+                    "Priority": 15,
+                    "cost": 18011708,
+                    "Regional costs": 5056376
+                },
+                "Type of basketball court_3": {
+                    "Priority": 4,
+                    "cost": 16416021,
+                    "Regional costs": 3226129
+                },
+                "Type of basketball court_4": {
+                    "Priority": 9,
+                    "cost": 15553636,
+                    "Regional costs": 4951618
+                },
+                "Type of basketball court_5": {
+                    "Priority": 7,
+                    "cost": 18227258,
+                    "Regional costs": 4971240
+                },
+                "Type of basketball court_6": {
+                    "Priority": 2,
+                    "cost": 15175474,
+                    "Regional costs": 4472148
+                },
+                "Type of basketball court_7": {
+                    "Priority": 8,
+                    "cost": 19361933,
+                    "Regional costs": 3721550
+                }
+            },
+            "Number of players": 9919,
+            "Rank": 10,
+            "Regs budget": 6489163
+        },
+        "Region_34": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 8,
+                    "cost": 17408906,
+                    "Regional costs": 3999132
+                },
+                "Type of basketball court_2": {
+                    "Priority": 9,
+                    "cost": 19331600,
+                    "Regional costs": 3629512
+                },
+                "Type of basketball court_3": {
+                    "Priority": 13,
+                    "cost": 17631012,
+                    "Regional costs": 5184776
+                },
+                "Type of basketball court_4": {
+                    "Priority": 2,
+                    "cost": 14867746,
+                    "Regional costs": 5174834
+                },
+                "Type of basketball court_5": {
+                    "Priority": 8,
+                    "cost": 15999901,
+                    "Regional costs": 3679434
+                },
+                "Type of basketball court_6": {
+                    "Priority": 10,
+                    "cost": 15390989,
+                    "Regional costs": 3741546
+                },
+                "Type of basketball court_7": {
+                    "Priority": 5,
+                    "cost": 14565703,
+                    "Regional costs": 4462138
+                }
+            },
+            "Number of players": 4630,
+            "Rank": 11,
+            "Regs budget": 6454032
+        },
+        "Region_35": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 7,
+                    "cost": 14760500,
+                    "Regional costs": 3101186
+                },
+                "Type of basketball court_2": {
+                    "Priority": 11,
+                    "cost": 16053154,
+                    "Regional costs": 3889597
+                },
+                "Type of basketball court_3": {
+                    "Priority": 5,
+                    "cost": 15124578,
+                    "Regional costs": 3874436
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 16684235,
+                    "Regional costs": 3208693
+                },
+                "Type of basketball court_5": {
+                    "Priority": 7,
+                    "cost": 18568789,
+                    "Regional costs": 3608148
+                },
+                "Type of basketball court_6": {
+                    "Priority": 8,
+                    "cost": 16002069,
+                    "Regional costs": 3351667
+                },
+                "Type of basketball court_7": {
+                    "Priority": 16,
+                    "cost": 19299038,
+                    "Regional costs": 4537800
+                }
+            },
+            "Number of players": 5648,
+            "Rank": 2,
+            "Regs budget": 5961881
+        },
+        "Region_36": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 2,
+                    "cost": 18445401,
+                    "Regional costs": 4593769
+                },
+                "Type of basketball court_2": {
+                    "Priority": 8,
+                    "cost": 16146349,
+                    "Regional costs": 3893070
                 },
                 "Type of basketball court_3": {
                     "Priority": 12,
-                    "cost": 17092832,
-                    "Regional costs": 2041657
+                    "cost": 15523360,
+                    "Regional costs": 4129215
+                },
+                "Type of basketball court_4": {
+                    "Priority": 8,
+                    "cost": 14407852,
+                    "Regional costs": 3222137
+                },
+                "Type of basketball court_5": {
+                    "Priority": 13,
+                    "cost": 16300697,
+                    "Regional costs": 4480089
+                },
+                "Type of basketball court_6": {
+                    "Priority": 6,
+                    "cost": 19118573,
+                    "Regional costs": 4350857
+                },
+                "Type of basketball court_7": {
+                    "Priority": 11,
+                    "cost": 18782949,
+                    "Regional costs": 3704973
                 }
             },
-            "Number of players": 7729,
+            "Number of players": 5037,
+            "Rank": 11,
+            "Regs budget": 6852552
+        },
+        "Region_37": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 6,
+                    "cost": 19439344,
+                    "Regional costs": 3088029
+                },
+                "Type of basketball court_2": {
+                    "Priority": 12,
+                    "cost": 19100704,
+                    "Regional costs": 4528433
+                },
+                "Type of basketball court_3": {
+                    "Priority": 7,
+                    "cost": 14573432,
+                    "Regional costs": 4350026
+                },
+                "Type of basketball court_4": {
+                    "Priority": 7,
+                    "cost": 14297457,
+                    "Regional costs": 3611304
+                },
+                "Type of basketball court_5": {
+                    "Priority": 10,
+                    "cost": 18783747,
+                    "Regional costs": 5078495
+                },
+                "Type of basketball court_6": {
+                    "Priority": 17,
+                    "cost": 18428053,
+                    "Regional costs": 3411224
+                },
+                "Type of basketball court_7": {
+                    "Priority": 17,
+                    "cost": 17788148,
+                    "Regional costs": 4931828
+                }
+            },
+            "Number of players": 6530,
+            "Rank": 4,
+            "Regs budget": 5675552
+        },
+        "Region_38": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 17,
+                    "cost": 13844296,
+                    "Regional costs": 3936114
+                },
+                "Type of basketball court_2": {
+                    "Priority": 13,
+                    "cost": 12558734,
+                    "Regional costs": 4588869
+                },
+                "Type of basketball court_3": {
+                    "Priority": 4,
+                    "cost": 15379977,
+                    "Regional costs": 3018267
+                },
+                "Type of basketball court_4": {
+                    "Priority": 16,
+                    "cost": 16849629,
+                    "Regional costs": 4615529
+                },
+                "Type of basketball court_5": {
+                    "Priority": 15,
+                    "cost": 12855446,
+                    "Regional costs": 3505186
+                },
+                "Type of basketball court_6": {
+                    "Priority": 3,
+                    "cost": 17795238,
+                    "Regional costs": 4733824
+                },
+                "Type of basketball court_7": {
+                    "Priority": 10,
+                    "cost": 12494333,
+                    "Regional costs": 5102654
+                }
+            },
+            "Number of players": 5635,
+            "Rank": 1,
+            "Regs budget": 6820450
+        },
+        "Region_39": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 15,
+                    "cost": 13727922,
+                    "Regional costs": 3895990
+                },
+                "Type of basketball court_2": {
+                    "Priority": 15,
+                    "cost": 17703454,
+                    "Regional costs": 4223403
+                },
+                "Type of basketball court_3": {
+                    "Priority": 8,
+                    "cost": 13546089,
+                    "Regional costs": 3493022
+                },
+                "Type of basketball court_4": {
+                    "Priority": 11,
+                    "cost": 17098109,
+                    "Regional costs": 5118738
+                },
+                "Type of basketball court_5": {
+                    "Priority": 9,
+                    "cost": 19770785,
+                    "Regional costs": 3563001
+                },
+                "Type of basketball court_6": {
+                    "Priority": 5,
+                    "cost": 12742158,
+                    "Regional costs": 3926620
+                },
+                "Type of basketball court_7": {
+                    "Priority": 6,
+                    "cost": 16938328,
+                    "Regional costs": 4324785
+                }
+            },
+            "Number of players": 3486,
             "Rank": 2,
-            "Regs budget": 6124971
+            "Regs budget": 5442966
+        },
+        "Region_40": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 14,
+                    "cost": 16867104,
+                    "Regional costs": 4493102
+                },
+                "Type of basketball court_2": {
+                    "Priority": 13,
+                    "cost": 16525945,
+                    "Regional costs": 4258417
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 19056759,
+                    "Regional costs": 3271259
+                },
+                "Type of basketball court_4": {
+                    "Priority": 16,
+                    "cost": 12778354,
+                    "Regional costs": 5189501
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 13026643,
+                    "Regional costs": 3470400
+                },
+                "Type of basketball court_6": {
+                    "Priority": 16,
+                    "cost": 12763063,
+                    "Regional costs": 4750991
+                },
+                "Type of basketball court_7": {
+                    "Priority": 15,
+                    "cost": 17535792,
+                    "Regional costs": 3854176
+                }
+            },
+            "Number of players": 9091,
+            "Rank": 7,
+            "Regs budget": 7432962
+        },
+        "Region_41": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 3,
+                    "cost": 12375285,
+                    "Regional costs": 3649577
+                },
+                "Type of basketball court_2": {
+                    "Priority": 3,
+                    "cost": 19379594,
+                    "Regional costs": 4304944
+                },
+                "Type of basketball court_3": {
+                    "Priority": 5,
+                    "cost": 14227792,
+                    "Regional costs": 5191067
+                },
+                "Type of basketball court_4": {
+                    "Priority": 5,
+                    "cost": 17373379,
+                    "Regional costs": 3357585
+                },
+                "Type of basketball court_5": {
+                    "Priority": 17,
+                    "cost": 18828325,
+                    "Regional costs": 4641417
+                },
+                "Type of basketball court_6": {
+                    "Priority": 9,
+                    "cost": 19594355,
+                    "Regional costs": 4955019
+                },
+                "Type of basketball court_7": {
+                    "Priority": 3,
+                    "cost": 15798442,
+                    "Regional costs": 3515634
+                }
+            },
+            "Number of players": 3977,
+            "Rank": 11,
+            "Regs budget": 5920224
+        },
+        "Region_42": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 9,
+                    "cost": 17857695,
+                    "Regional costs": 3747012
+                },
+                "Type of basketball court_2": {
+                    "Priority": 11,
+                    "cost": 12232997,
+                    "Regional costs": 4677701
+                },
+                "Type of basketball court_3": {
+                    "Priority": 5,
+                    "cost": 15954951,
+                    "Regional costs": 4882058
+                },
+                "Type of basketball court_4": {
+                    "Priority": 13,
+                    "cost": 19096212,
+                    "Regional costs": 3436757
+                },
+                "Type of basketball court_5": {
+                    "Priority": 3,
+                    "cost": 16669337,
+                    "Regional costs": 3075630
+                },
+                "Type of basketball court_6": {
+                    "Priority": 9,
+                    "cost": 17331227,
+                    "Regional costs": 5166424
+                },
+                "Type of basketball court_7": {
+                    "Priority": 5,
+                    "cost": 17343216,
+                    "Regional costs": 4714010
+                }
+            },
+            "Number of players": 7429,
+            "Rank": 3,
+            "Regs budget": 6235390
+        },
+        "Region_43": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 12,
+                    "cost": 15641183,
+                    "Regional costs": 5138779
+                },
+                "Type of basketball court_2": {
+                    "Priority": 1,
+                    "cost": 19640969,
+                    "Regional costs": 5180096
+                },
+                "Type of basketball court_3": {
+                    "Priority": 4,
+                    "cost": 14947063,
+                    "Regional costs": 3697250
+                },
+                "Type of basketball court_4": {
+                    "Priority": 11,
+                    "cost": 16000710,
+                    "Regional costs": 3779378
+                },
+                "Type of basketball court_5": {
+                    "Priority": 11,
+                    "cost": 19529936,
+                    "Regional costs": 3598193
+                },
+                "Type of basketball court_6": {
+                    "Priority": 5,
+                    "cost": 12323980,
+                    "Regional costs": 5149992
+                },
+                "Type of basketball court_7": {
+                    "Priority": 15,
+                    "cost": 12724113,
+                    "Regional costs": 4094750
+                }
+            },
+            "Number of players": 9188,
+            "Rank": 1,
+            "Regs budget": 6536830
+        },
+        "Region_44": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 4,
+                    "cost": 14083621,
+                    "Regional costs": 3195222
+                },
+                "Type of basketball court_2": {
+                    "Priority": 8,
+                    "cost": 16303942,
+                    "Regional costs": 3201246
+                },
+                "Type of basketball court_3": {
+                    "Priority": 6,
+                    "cost": 13200910,
+                    "Regional costs": 5060248
+                },
+                "Type of basketball court_4": {
+                    "Priority": 7,
+                    "cost": 19716349,
+                    "Regional costs": 3838854
+                },
+                "Type of basketball court_5": {
+                    "Priority": 14,
+                    "cost": 19296953,
+                    "Regional costs": 5110170
+                },
+                "Type of basketball court_6": {
+                    "Priority": 17,
+                    "cost": 16013137,
+                    "Regional costs": 3680727
+                },
+                "Type of basketball court_7": {
+                    "Priority": 10,
+                    "cost": 16499785,
+                    "Regional costs": 4074838
+                }
+            },
+            "Number of players": 7493,
+            "Rank": 10,
+            "Regs budget": 5239087
+        },
+        "Region_45": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 10,
+                    "cost": 13072315,
+                    "Regional costs": 5034756
+                },
+                "Type of basketball court_2": {
+                    "Priority": 9,
+                    "cost": 18962556,
+                    "Regional costs": 3832552
+                },
+                "Type of basketball court_3": {
+                    "Priority": 11,
+                    "cost": 18425296,
+                    "Regional costs": 4435863
+                },
+                "Type of basketball court_4": {
+                    "Priority": 11,
+                    "cost": 15463882,
+                    "Regional costs": 4157545
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 17169571,
+                    "Regional costs": 3197321
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 15864808,
+                    "Regional costs": 4429578
+                },
+                "Type of basketball court_7": {
+                    "Priority": 1,
+                    "cost": 14208372,
+                    "Regional costs": 4875238
+                }
+            },
+            "Number of players": 6293,
+            "Rank": 4,
+            "Regs budget": 5682032
+        },
+        "Region_46": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 3,
+                    "cost": 14006940,
+                    "Regional costs": 3804725
+                },
+                "Type of basketball court_2": {
+                    "Priority": 1,
+                    "cost": 13273066,
+                    "Regional costs": 3540160
+                },
+                "Type of basketball court_3": {
+                    "Priority": 7,
+                    "cost": 19174641,
+                    "Regional costs": 4207844
+                },
+                "Type of basketball court_4": {
+                    "Priority": 1,
+                    "cost": 16717667,
+                    "Regional costs": 4281754
+                },
+                "Type of basketball court_5": {
+                    "Priority": 14,
+                    "cost": 14134968,
+                    "Regional costs": 3055963
+                },
+                "Type of basketball court_6": {
+                    "Priority": 17,
+                    "cost": 15311256,
+                    "Regional costs": 3744457
+                },
+                "Type of basketball court_7": {
+                    "Priority": 2,
+                    "cost": 18206760,
+                    "Regional costs": 5199852
+                }
+            },
+            "Number of players": 7050,
+            "Rank": 3,
+            "Regs budget": 5457147
+        },
+        "Region_47": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 12,
+                    "cost": 15060649,
+                    "Regional costs": 4938952
+                },
+                "Type of basketball court_2": {
+                    "Priority": 8,
+                    "cost": 18235803,
+                    "Regional costs": 3838750
+                },
+                "Type of basketball court_3": {
+                    "Priority": 14,
+                    "cost": 18849359,
+                    "Regional costs": 5057936
+                },
+                "Type of basketball court_4": {
+                    "Priority": 11,
+                    "cost": 17182662,
+                    "Regional costs": 4506819
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 15809531,
+                    "Regional costs": 4857666
+                },
+                "Type of basketball court_6": {
+                    "Priority": 13,
+                    "cost": 17515626,
+                    "Regional costs": 3810871
+                },
+                "Type of basketball court_7": {
+                    "Priority": 10,
+                    "cost": 12687765,
+                    "Regional costs": 4499518
+                }
+            },
+            "Number of players": 8557,
+            "Rank": 8,
+            "Regs budget": 7063506
+        },
+        "Region_48": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 13,
+                    "cost": 17909156,
+                    "Regional costs": 3149041
+                },
+                "Type of basketball court_2": {
+                    "Priority": 6,
+                    "cost": 16725739,
+                    "Regional costs": 3678189
+                },
+                "Type of basketball court_3": {
+                    "Priority": 1,
+                    "cost": 12785905,
+                    "Regional costs": 4253263
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 15522561,
+                    "Regional costs": 4992659
+                },
+                "Type of basketball court_5": {
+                    "Priority": 3,
+                    "cost": 14107658,
+                    "Regional costs": 3869699
+                },
+                "Type of basketball court_6": {
+                    "Priority": 14,
+                    "cost": 18809702,
+                    "Regional costs": 4675222
+                },
+                "Type of basketball court_7": {
+                    "Priority": 2,
+                    "cost": 16679581,
+                    "Regional costs": 3710475
+                }
+            },
+            "Number of players": 5889,
+            "Rank": 10,
+            "Regs budget": 5348318
+        },
+        "Region_49": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 4,
+                    "cost": 12015205,
+                    "Regional costs": 3258936
+                },
+                "Type of basketball court_2": {
+                    "Priority": 8,
+                    "cost": 17136772,
+                    "Regional costs": 3372857
+                },
+                "Type of basketball court_3": {
+                    "Priority": 15,
+                    "cost": 13745128,
+                    "Regional costs": 4205249
+                },
+                "Type of basketball court_4": {
+                    "Priority": 3,
+                    "cost": 17718666,
+                    "Regional costs": 5188593
+                },
+                "Type of basketball court_5": {
+                    "Priority": 11,
+                    "cost": 15515346,
+                    "Regional costs": 5094396
+                },
+                "Type of basketball court_6": {
+                    "Priority": 7,
+                    "cost": 19317927,
+                    "Regional costs": 4750598
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 12678191,
+                    "Regional costs": 3119410
+                }
+            },
+            "Number of players": 8763,
+            "Rank": 5,
+            "Regs budget": 6135404
+        },
+        "Region_50": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 16,
+                    "cost": 18817592,
+                    "Regional costs": 3922655
+                },
+                "Type of basketball court_2": {
+                    "Priority": 2,
+                    "cost": 15949029,
+                    "Regional costs": 4930410
+                },
+                "Type of basketball court_3": {
+                    "Priority": 2,
+                    "cost": 14106910,
+                    "Regional costs": 3071484
+                },
+                "Type of basketball court_4": {
+                    "Priority": 4,
+                    "cost": 15795203,
+                    "Regional costs": 4683500
+                },
+                "Type of basketball court_5": {
+                    "Priority": 17,
+                    "cost": 18214758,
+                    "Regional costs": 4037446
+                },
+                "Type of basketball court_6": {
+                    "Priority": 16,
+                    "cost": 17224449,
+                    "Regional costs": 3940807
+                },
+                "Type of basketball court_7": {
+                    "Priority": 16,
+                    "cost": 19911038,
+                    "Regional costs": 3531573
+                }
+            },
+            "Number of players": 7299,
+            "Rank": 10,
+            "Regs budget": 5318324
+        },
+        "Region_51": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 16,
+                    "cost": 17600808,
+                    "Regional costs": 4855587
+                },
+                "Type of basketball court_2": {
+                    "Priority": 1,
+                    "cost": 19290510,
+                    "Regional costs": 3577905
+                },
+                "Type of basketball court_3": {
+                    "Priority": 1,
+                    "cost": 12970882,
+                    "Regional costs": 3306623
+                },
+                "Type of basketball court_4": {
+                    "Priority": 15,
+                    "cost": 19767605,
+                    "Regional costs": 3739133
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 15213857,
+                    "Regional costs": 4133698
+                },
+                "Type of basketball court_6": {
+                    "Priority": 3,
+                    "cost": 16099241,
+                    "Regional costs": 4781427
+                },
+                "Type of basketball court_7": {
+                    "Priority": 4,
+                    "cost": 19502978,
+                    "Regional costs": 4344276
+                }
+            },
+            "Number of players": 3406,
+            "Rank": 5,
+            "Regs budget": 5353179
+        },
+        "Region_52": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 17,
+                    "cost": 17225164,
+                    "Regional costs": 3784901
+                },
+                "Type of basketball court_2": {
+                    "Priority": 3,
+                    "cost": 18933905,
+                    "Regional costs": 3695833
+                },
+                "Type of basketball court_3": {
+                    "Priority": 6,
+                    "cost": 15234894,
+                    "Regional costs": 4412517
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 17385134,
+                    "Regional costs": 3241081
+                },
+                "Type of basketball court_5": {
+                    "Priority": 5,
+                    "cost": 18712834,
+                    "Regional costs": 3045498
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 15322059,
+                    "Regional costs": 4645048
+                },
+                "Type of basketball court_7": {
+                    "Priority": 14,
+                    "cost": 15766252,
+                    "Regional costs": 3866838
+                }
+            },
+            "Number of players": 4181,
+            "Rank": 3,
+            "Regs budget": 5004053
+        },
+        "Region_53": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 15,
+                    "cost": 14372239,
+                    "Regional costs": 4807166
+                },
+                "Type of basketball court_2": {
+                    "Priority": 16,
+                    "cost": 13296256,
+                    "Regional costs": 4869679
+                },
+                "Type of basketball court_3": {
+                    "Priority": 13,
+                    "cost": 15406661,
+                    "Regional costs": 3292414
+                },
+                "Type of basketball court_4": {
+                    "Priority": 5,
+                    "cost": 13725387,
+                    "Regional costs": 3392419
+                },
+                "Type of basketball court_5": {
+                    "Priority": 17,
+                    "cost": 15018403,
+                    "Regional costs": 5046611
+                },
+                "Type of basketball court_6": {
+                    "Priority": 14,
+                    "cost": 19193572,
+                    "Regional costs": 4878766
+                },
+                "Type of basketball court_7": {
+                    "Priority": 7,
+                    "cost": 13411377,
+                    "Regional costs": 3147239
+                }
+            },
+            "Number of players": 3388,
+            "Rank": 5,
+            "Regs budget": 5273147
+        },
+        "Region_54": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 15,
+                    "cost": 19926673,
+                    "Regional costs": 3409353
+                },
+                "Type of basketball court_2": {
+                    "Priority": 5,
+                    "cost": 12253458,
+                    "Regional costs": 4357476
+                },
+                "Type of basketball court_3": {
+                    "Priority": 5,
+                    "cost": 13757287,
+                    "Regional costs": 3769919
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 15604000,
+                    "Regional costs": 4731091
+                },
+                "Type of basketball court_5": {
+                    "Priority": 5,
+                    "cost": 12868733,
+                    "Regional costs": 3515101
+                },
+                "Type of basketball court_6": {
+                    "Priority": 6,
+                    "cost": 15338452,
+                    "Regional costs": 4381625
+                },
+                "Type of basketball court_7": {
+                    "Priority": 3,
+                    "cost": 17168158,
+                    "Regional costs": 3478928
+                }
+            },
+            "Number of players": 9863,
+            "Rank": 2,
+            "Regs budget": 5351024
+        },
+        "Region_55": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 11,
+                    "cost": 17418934,
+                    "Regional costs": 3026613
+                },
+                "Type of basketball court_2": {
+                    "Priority": 15,
+                    "cost": 18557456,
+                    "Regional costs": 3258624
+                },
+                "Type of basketball court_3": {
+                    "Priority": 5,
+                    "cost": 17156470,
+                    "Regional costs": 4850263
+                },
+                "Type of basketball court_4": {
+                    "Priority": 14,
+                    "cost": 15131723,
+                    "Regional costs": 5175091
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 12645558,
+                    "Regional costs": 3249696
+                },
+                "Type of basketball court_6": {
+                    "Priority": 5,
+                    "cost": 19496600,
+                    "Regional costs": 3618769
+                },
+                "Type of basketball court_7": {
+                    "Priority": 10,
+                    "cost": 19511691,
+                    "Regional costs": 4143980
+                }
+            },
+            "Number of players": 8182,
+            "Rank": 10,
+            "Regs budget": 6065459
+        },
+        "Region_56": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 2,
+                    "cost": 16980476,
+                    "Regional costs": 4327295
+                },
+                "Type of basketball court_2": {
+                    "Priority": 6,
+                    "cost": 19106841,
+                    "Regional costs": 3886020
+                },
+                "Type of basketball court_3": {
+                    "Priority": 10,
+                    "cost": 19399387,
+                    "Regional costs": 3663288
+                },
+                "Type of basketball court_4": {
+                    "Priority": 5,
+                    "cost": 18243452,
+                    "Regional costs": 3700048
+                },
+                "Type of basketball court_5": {
+                    "Priority": 7,
+                    "cost": 12008140,
+                    "Regional costs": 4905761
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 17903156,
+                    "Regional costs": 3008880
+                },
+                "Type of basketball court_7": {
+                    "Priority": 5,
+                    "cost": 17577446,
+                    "Regional costs": 3442090
+                }
+            },
+            "Number of players": 8437,
+            "Rank": 11,
+            "Regs budget": 7279074
+        },
+        "Region_57": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 10,
+                    "cost": 18761996,
+                    "Regional costs": 4517402
+                },
+                "Type of basketball court_2": {
+                    "Priority": 1,
+                    "cost": 14578219,
+                    "Regional costs": 4949037
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 12415616,
+                    "Regional costs": 4914105
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 19239427,
+                    "Regional costs": 3215907
+                },
+                "Type of basketball court_5": {
+                    "Priority": 14,
+                    "cost": 19236507,
+                    "Regional costs": 3841453
+                },
+                "Type of basketball court_6": {
+                    "Priority": 16,
+                    "cost": 17914863,
+                    "Regional costs": 3814048
+                },
+                "Type of basketball court_7": {
+                    "Priority": 8,
+                    "cost": 13615705,
+                    "Regional costs": 3043658
+                }
+            },
+            "Number of players": 8585,
+            "Rank": 11,
+            "Regs budget": 5496287
+        },
+        "Region_58": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 2,
+                    "cost": 14783972,
+                    "Regional costs": 4657460
+                },
+                "Type of basketball court_2": {
+                    "Priority": 17,
+                    "cost": 18890241,
+                    "Regional costs": 3059315
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 14228350,
+                    "Regional costs": 4000548
+                },
+                "Type of basketball court_4": {
+                    "Priority": 1,
+                    "cost": 13803209,
+                    "Regional costs": 5022042
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 15840024,
+                    "Regional costs": 4055471
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 13435614,
+                    "Regional costs": 4273179
+                },
+                "Type of basketball court_7": {
+                    "Priority": 14,
+                    "cost": 15813713,
+                    "Regional costs": 3717837
+                }
+            },
+            "Number of players": 5071,
+            "Rank": 3,
+            "Regs budget": 5155570
+        },
+        "Region_59": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 3,
+                    "cost": 17093168,
+                    "Regional costs": 3804294
+                },
+                "Type of basketball court_2": {
+                    "Priority": 14,
+                    "cost": 14540139,
+                    "Regional costs": 3666117
+                },
+                "Type of basketball court_3": {
+                    "Priority": 16,
+                    "cost": 13052233,
+                    "Regional costs": 4440635
+                },
+                "Type of basketball court_4": {
+                    "Priority": 3,
+                    "cost": 19206788,
+                    "Regional costs": 4311293
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 15686878,
+                    "Regional costs": 5135034
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 15530399,
+                    "Regional costs": 3640842
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 12891475,
+                    "Regional costs": 3075107
+                }
+            },
+            "Number of players": 9785,
+            "Rank": 10,
+            "Regs budget": 5389395
+        },
+        "Region_60": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 6,
+                    "cost": 18473161,
+                    "Regional costs": 4139768
+                },
+                "Type of basketball court_2": {
+                    "Priority": 9,
+                    "cost": 17857426,
+                    "Regional costs": 4035107
+                },
+                "Type of basketball court_3": {
+                    "Priority": 10,
+                    "cost": 19369887,
+                    "Regional costs": 4055736
+                },
+                "Type of basketball court_4": {
+                    "Priority": 2,
+                    "cost": 15007813,
+                    "Regional costs": 4720564
+                },
+                "Type of basketball court_5": {
+                    "Priority": 2,
+                    "cost": 13565053,
+                    "Regional costs": 4316881
+                },
+                "Type of basketball court_6": {
+                    "Priority": 17,
+                    "cost": 15610916,
+                    "Regional costs": 4158146
+                },
+                "Type of basketball court_7": {
+                    "Priority": 7,
+                    "cost": 16937792,
+                    "Regional costs": 3195920
+                }
+            },
+            "Number of players": 6059,
+            "Rank": 6,
+            "Regs budget": 5318034
+        },
+        "Region_61": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 17,
+                    "cost": 17359576,
+                    "Regional costs": 3114524
+                },
+                "Type of basketball court_2": {
+                    "Priority": 7,
+                    "cost": 16609543,
+                    "Regional costs": 3996030
+                },
+                "Type of basketball court_3": {
+                    "Priority": 12,
+                    "cost": 14838342,
+                    "Regional costs": 4347008
+                },
+                "Type of basketball court_4": {
+                    "Priority": 15,
+                    "cost": 12395900,
+                    "Regional costs": 3530428
+                },
+                "Type of basketball court_5": {
+                    "Priority": 16,
+                    "cost": 12266885,
+                    "Regional costs": 5113537
+                },
+                "Type of basketball court_6": {
+                    "Priority": 16,
+                    "cost": 19850184,
+                    "Regional costs": 4927651
+                },
+                "Type of basketball court_7": {
+                    "Priority": 4,
+                    "cost": 15207713,
+                    "Regional costs": 4882596
+                }
+            },
+            "Number of players": 4542,
+            "Rank": 4,
+            "Regs budget": 5313614
+        },
+        "Region_62": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 1,
+                    "cost": 16738285,
+                    "Regional costs": 4019631
+                },
+                "Type of basketball court_2": {
+                    "Priority": 11,
+                    "cost": 13342612,
+                    "Regional costs": 3913179
+                },
+                "Type of basketball court_3": {
+                    "Priority": 1,
+                    "cost": 17636827,
+                    "Regional costs": 4331192
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 13195610,
+                    "Regional costs": 4882495
+                },
+                "Type of basketball court_5": {
+                    "Priority": 3,
+                    "cost": 15410096,
+                    "Regional costs": 5046478
+                },
+                "Type of basketball court_6": {
+                    "Priority": 3,
+                    "cost": 15853617,
+                    "Regional costs": 4793366
+                },
+                "Type of basketball court_7": {
+                    "Priority": 3,
+                    "cost": 12718163,
+                    "Regional costs": 3276827
+                }
+            },
+            "Number of players": 8746,
+            "Rank": 2,
+            "Regs budget": 6955675
+        },
+        "Region_63": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 11,
+                    "cost": 18259051,
+                    "Regional costs": 3969974
+                },
+                "Type of basketball court_2": {
+                    "Priority": 5,
+                    "cost": 13430720,
+                    "Regional costs": 3527557
+                },
+                "Type of basketball court_3": {
+                    "Priority": 7,
+                    "cost": 17159968,
+                    "Regional costs": 4284138
+                },
+                "Type of basketball court_4": {
+                    "Priority": 1,
+                    "cost": 16052564,
+                    "Regional costs": 5186417
+                },
+                "Type of basketball court_5": {
+                    "Priority": 10,
+                    "cost": 14645188,
+                    "Regional costs": 3610483
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 12038872,
+                    "Regional costs": 3927698
+                },
+                "Type of basketball court_7": {
+                    "Priority": 7,
+                    "cost": 18652142,
+                    "Regional costs": 3498734
+                }
+            },
+            "Number of players": 7312,
+            "Rank": 11,
+            "Regs budget": 5338713
+        },
+        "Region_64": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 14,
+                    "cost": 19654456,
+                    "Regional costs": 5192634
+                },
+                "Type of basketball court_2": {
+                    "Priority": 9,
+                    "cost": 16957916,
+                    "Regional costs": 3401802
+                },
+                "Type of basketball court_3": {
+                    "Priority": 2,
+                    "cost": 12941233,
+                    "Regional costs": 4215475
+                },
+                "Type of basketball court_4": {
+                    "Priority": 10,
+                    "cost": 12067769,
+                    "Regional costs": 5053530
+                },
+                "Type of basketball court_5": {
+                    "Priority": 13,
+                    "cost": 17793798,
+                    "Regional costs": 4460273
+                },
+                "Type of basketball court_6": {
+                    "Priority": 5,
+                    "cost": 19119324,
+                    "Regional costs": 3821973
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 19492513,
+                    "Regional costs": 3281473
+                }
+            },
+            "Number of players": 5468,
+            "Rank": 9,
+            "Regs budget": 5999958
+        },
+        "Region_65": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 17,
+                    "cost": 13321391,
+                    "Regional costs": 4748165
+                },
+                "Type of basketball court_2": {
+                    "Priority": 11,
+                    "cost": 15391443,
+                    "Regional costs": 3610622
+                },
+                "Type of basketball court_3": {
+                    "Priority": 13,
+                    "cost": 18875039,
+                    "Regional costs": 3460908
+                },
+                "Type of basketball court_4": {
+                    "Priority": 2,
+                    "cost": 14679195,
+                    "Regional costs": 3265897
+                },
+                "Type of basketball court_5": {
+                    "Priority": 17,
+                    "cost": 12841179,
+                    "Regional costs": 3533105
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 17574380,
+                    "Regional costs": 4711906
+                },
+                "Type of basketball court_7": {
+                    "Priority": 11,
+                    "cost": 18823493,
+                    "Regional costs": 3190433
+                }
+            },
+            "Number of players": 6011,
+            "Rank": 11,
+            "Regs budget": 5497668
+        },
+        "Region_66": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 4,
+                    "cost": 17306556,
+                    "Regional costs": 4672870
+                },
+                "Type of basketball court_2": {
+                    "Priority": 2,
+                    "cost": 12710910,
+                    "Regional costs": 3189481
+                },
+                "Type of basketball court_3": {
+                    "Priority": 11,
+                    "cost": 17738665,
+                    "Regional costs": 4793736
+                },
+                "Type of basketball court_4": {
+                    "Priority": 14,
+                    "cost": 13691770,
+                    "Regional costs": 4542350
+                },
+                "Type of basketball court_5": {
+                    "Priority": 1,
+                    "cost": 19908238,
+                    "Regional costs": 3956622
+                },
+                "Type of basketball court_6": {
+                    "Priority": 17,
+                    "cost": 19608118,
+                    "Regional costs": 4573846
+                },
+                "Type of basketball court_7": {
+                    "Priority": 7,
+                    "cost": 12795955,
+                    "Regional costs": 3690047
+                }
+            },
+            "Number of players": 6337,
+            "Rank": 11,
+            "Regs budget": 5862002
+        },
+        "Region_67": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 7,
+                    "cost": 16575378,
+                    "Regional costs": 4663210
+                },
+                "Type of basketball court_2": {
+                    "Priority": 2,
+                    "cost": 18980117,
+                    "Regional costs": 3414362
+                },
+                "Type of basketball court_3": {
+                    "Priority": 1,
+                    "cost": 19530147,
+                    "Regional costs": 4554565
+                },
+                "Type of basketball court_4": {
+                    "Priority": 4,
+                    "cost": 14199308,
+                    "Regional costs": 3653803
+                },
+                "Type of basketball court_5": {
+                    "Priority": 5,
+                    "cost": 14863763,
+                    "Regional costs": 3508720
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 12765761,
+                    "Regional costs": 4077737
+                },
+                "Type of basketball court_7": {
+                    "Priority": 9,
+                    "cost": 19815060,
+                    "Regional costs": 4872133
+                }
+            },
+            "Number of players": 6211,
+            "Rank": 5,
+            "Regs budget": 6923288
+        },
+        "Region_68": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 13,
+                    "cost": 14604905,
+                    "Regional costs": 5121694
+                },
+                "Type of basketball court_2": {
+                    "Priority": 5,
+                    "cost": 19811380,
+                    "Regional costs": 3191333
+                },
+                "Type of basketball court_3": {
+                    "Priority": 15,
+                    "cost": 15090819,
+                    "Regional costs": 3494972
+                },
+                "Type of basketball court_4": {
+                    "Priority": 17,
+                    "cost": 13815346,
+                    "Regional costs": 4501957
+                },
+                "Type of basketball court_5": {
+                    "Priority": 5,
+                    "cost": 16697665,
+                    "Regional costs": 4922457
+                },
+                "Type of basketball court_6": {
+                    "Priority": 5,
+                    "cost": 14115890,
+                    "Regional costs": 3233551
+                },
+                "Type of basketball court_7": {
+                    "Priority": 11,
+                    "cost": 14698511,
+                    "Regional costs": 3938441
+                }
+            },
+            "Number of players": 3709,
+            "Rank": 11,
+            "Regs budget": 6881081
+        },
+        "Region_69": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 9,
+                    "cost": 12237843,
+                    "Regional costs": 3987742
+                },
+                "Type of basketball court_2": {
+                    "Priority": 13,
+                    "cost": 16569465,
+                    "Regional costs": 5193867
+                },
+                "Type of basketball court_3": {
+                    "Priority": 10,
+                    "cost": 17168488,
+                    "Regional costs": 3617250
+                },
+                "Type of basketball court_4": {
+                    "Priority": 7,
+                    "cost": 16993062,
+                    "Regional costs": 4349136
+                },
+                "Type of basketball court_5": {
+                    "Priority": 12,
+                    "cost": 13776610,
+                    "Regional costs": 5047155
+                },
+                "Type of basketball court_6": {
+                    "Priority": 15,
+                    "cost": 18678922,
+                    "Regional costs": 3937807
+                },
+                "Type of basketball court_7": {
+                    "Priority": 9,
+                    "cost": 16792115,
+                    "Regional costs": 3161041
+                }
+            },
+            "Number of players": 9908,
+            "Rank": 9,
+            "Regs budget": 7017072
+        },
+        "Region_70": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 16,
+                    "cost": 15148362,
+                    "Regional costs": 3065544
+                },
+                "Type of basketball court_2": {
+                    "Priority": 8,
+                    "cost": 12889846,
+                    "Regional costs": 4493713
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 15170820,
+                    "Regional costs": 3506839
+                },
+                "Type of basketball court_4": {
+                    "Priority": 1,
+                    "cost": 16294443,
+                    "Regional costs": 3523214
+                },
+                "Type of basketball court_5": {
+                    "Priority": 7,
+                    "cost": 16323720,
+                    "Regional costs": 3613568
+                },
+                "Type of basketball court_6": {
+                    "Priority": 8,
+                    "cost": 13254210,
+                    "Regional costs": 4347644
+                },
+                "Type of basketball court_7": {
+                    "Priority": 6,
+                    "cost": 12466993,
+                    "Regional costs": 3975779
+                }
+            },
+            "Number of players": 7385,
+            "Rank": 9,
+            "Regs budget": 5385834
+        },
+        "Region_71": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 4,
+                    "cost": 13428827,
+                    "Regional costs": 3950521
+                },
+                "Type of basketball court_2": {
+                    "Priority": 13,
+                    "cost": 18223137,
+                    "Regional costs": 3784822
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 13256989,
+                    "Regional costs": 3826312
+                },
+                "Type of basketball court_4": {
+                    "Priority": 8,
+                    "cost": 15339572,
+                    "Regional costs": 3742082
+                },
+                "Type of basketball court_5": {
+                    "Priority": 8,
+                    "cost": 13966119,
+                    "Regional costs": 3312755
+                },
+                "Type of basketball court_6": {
+                    "Priority": 16,
+                    "cost": 15721798,
+                    "Regional costs": 5197676
+                },
+                "Type of basketball court_7": {
+                    "Priority": 15,
+                    "cost": 19739985,
+                    "Regional costs": 4674493
+                }
+            },
+            "Number of players": 6707,
+            "Rank": 9,
+            "Regs budget": 5326728
+        },
+        "Region_72": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 4,
+                    "cost": 15811408,
+                    "Regional costs": 5023534
+                },
+                "Type of basketball court_2": {
+                    "Priority": 12,
+                    "cost": 19401968,
+                    "Regional costs": 3466002
+                },
+                "Type of basketball court_3": {
+                    "Priority": 16,
+                    "cost": 13743872,
+                    "Regional costs": 4002254
+                },
+                "Type of basketball court_4": {
+                    "Priority": 7,
+                    "cost": 16442083,
+                    "Regional costs": 4072183
+                },
+                "Type of basketball court_5": {
+                    "Priority": 4,
+                    "cost": 18801606,
+                    "Regional costs": 5125628
+                },
+                "Type of basketball court_6": {
+                    "Priority": 7,
+                    "cost": 16271293,
+                    "Regional costs": 4522551
+                },
+                "Type of basketball court_7": {
+                    "Priority": 12,
+                    "cost": 15064746,
+                    "Regional costs": 4449426
+                }
+            },
+            "Number of players": 7090,
+            "Rank": 9,
+            "Regs budget": 6379139
+        },
+        "Region_73": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 15,
+                    "cost": 17722107,
+                    "Regional costs": 4456471
+                },
+                "Type of basketball court_2": {
+                    "Priority": 16,
+                    "cost": 19414969,
+                    "Regional costs": 3973501
+                },
+                "Type of basketball court_3": {
+                    "Priority": 1,
+                    "cost": 12526056,
+                    "Regional costs": 5024498
+                },
+                "Type of basketball court_4": {
+                    "Priority": 9,
+                    "cost": 12039540,
+                    "Regional costs": 5108930
+                },
+                "Type of basketball court_5": {
+                    "Priority": 15,
+                    "cost": 17635926,
+                    "Regional costs": 3667652
+                },
+                "Type of basketball court_6": {
+                    "Priority": 17,
+                    "cost": 16735715,
+                    "Regional costs": 5158254
+                },
+                "Type of basketball court_7": {
+                    "Priority": 11,
+                    "cost": 12295259,
+                    "Regional costs": 3465591
+                }
+            },
+            "Number of players": 7238,
+            "Rank": 8,
+            "Regs budget": 5867835
+        },
+        "Region_74": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 12,
+                    "cost": 14335643,
+                    "Regional costs": 3840851
+                },
+                "Type of basketball court_2": {
+                    "Priority": 11,
+                    "cost": 18222223,
+                    "Regional costs": 4085014
+                },
+                "Type of basketball court_3": {
+                    "Priority": 13,
+                    "cost": 15950248,
+                    "Regional costs": 4698523
+                },
+                "Type of basketball court_4": {
+                    "Priority": 11,
+                    "cost": 17674519,
+                    "Regional costs": 3318372
+                },
+                "Type of basketball court_5": {
+                    "Priority": 4,
+                    "cost": 12976156,
+                    "Regional costs": 5120092
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 19656017,
+                    "Regional costs": 3950330
+                },
+                "Type of basketball court_7": {
+                    "Priority": 15,
+                    "cost": 18112508,
+                    "Regional costs": 3783079
+                }
+            },
+            "Number of players": 3900,
+            "Rank": 11,
+            "Regs budget": 6160800
+        },
+        "Region_75": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 1,
+                    "cost": 14456394,
+                    "Regional costs": 5148086
+                },
+                "Type of basketball court_2": {
+                    "Priority": 11,
+                    "cost": 19626618,
+                    "Regional costs": 4946328
+                },
+                "Type of basketball court_3": {
+                    "Priority": 15,
+                    "cost": 19359622,
+                    "Regional costs": 3518296
+                },
+                "Type of basketball court_4": {
+                    "Priority": 17,
+                    "cost": 18317480,
+                    "Regional costs": 4072970
+                },
+                "Type of basketball court_5": {
+                    "Priority": 9,
+                    "cost": 17013376,
+                    "Regional costs": 4058235
+                },
+                "Type of basketball court_6": {
+                    "Priority": 8,
+                    "cost": 18836527,
+                    "Regional costs": 3167866
+                },
+                "Type of basketball court_7": {
+                    "Priority": 16,
+                    "cost": 16099195,
+                    "Regional costs": 5101284
+                }
+            },
+            "Number of players": 6249,
+            "Rank": 6,
+            "Regs budget": 6040972
+        },
+        "Region_76": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 15,
+                    "cost": 16687841,
+                    "Regional costs": 4521045
+                },
+                "Type of basketball court_2": {
+                    "Priority": 15,
+                    "cost": 19670951,
+                    "Regional costs": 5013418
+                },
+                "Type of basketball court_3": {
+                    "Priority": 8,
+                    "cost": 14751788,
+                    "Regional costs": 3772103
+                },
+                "Type of basketball court_4": {
+                    "Priority": 17,
+                    "cost": 18991818,
+                    "Regional costs": 5181546
+                },
+                "Type of basketball court_5": {
+                    "Priority": 12,
+                    "cost": 17368095,
+                    "Regional costs": 4173133
+                },
+                "Type of basketball court_6": {
+                    "Priority": 7,
+                    "cost": 13395769,
+                    "Regional costs": 4804095
+                },
+                "Type of basketball court_7": {
+                    "Priority": 7,
+                    "cost": 18161364,
+                    "Regional costs": 4885996
+                }
+            },
+            "Number of players": 9818,
+            "Rank": 3,
+            "Regs budget": 6764698
+        },
+        "Region_77": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 3,
+                    "cost": 14895788,
+                    "Regional costs": 4626217
+                },
+                "Type of basketball court_2": {
+                    "Priority": 1,
+                    "cost": 14371072,
+                    "Regional costs": 4692946
+                },
+                "Type of basketball court_3": {
+                    "Priority": 4,
+                    "cost": 19434167,
+                    "Regional costs": 4196666
+                },
+                "Type of basketball court_4": {
+                    "Priority": 6,
+                    "cost": 15869000,
+                    "Regional costs": 4276572
+                },
+                "Type of basketball court_5": {
+                    "Priority": 8,
+                    "cost": 14223915,
+                    "Regional costs": 3941604
+                },
+                "Type of basketball court_6": {
+                    "Priority": 14,
+                    "cost": 16228069,
+                    "Regional costs": 3277335
+                },
+                "Type of basketball court_7": {
+                    "Priority": 13,
+                    "cost": 14110839,
+                    "Regional costs": 5119710
+                }
+            },
+            "Number of players": 4933,
+            "Rank": 2,
+            "Regs budget": 5014420
+        },
+        "Region_78": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 15,
+                    "cost": 12652574,
+                    "Regional costs": 4472124
+                },
+                "Type of basketball court_2": {
+                    "Priority": 12,
+                    "cost": 17423319,
+                    "Regional costs": 3454660
+                },
+                "Type of basketball court_3": {
+                    "Priority": 14,
+                    "cost": 19538623,
+                    "Regional costs": 3679270
+                },
+                "Type of basketball court_4": {
+                    "Priority": 4,
+                    "cost": 19882305,
+                    "Regional costs": 4342522
+                },
+                "Type of basketball court_5": {
+                    "Priority": 2,
+                    "cost": 13034992,
+                    "Regional costs": 4845830
+                },
+                "Type of basketball court_6": {
+                    "Priority": 9,
+                    "cost": 16102395,
+                    "Regional costs": 4094928
+                },
+                "Type of basketball court_7": {
+                    "Priority": 11,
+                    "cost": 15821888,
+                    "Regional costs": 3775171
+                }
+            },
+            "Number of players": 6304,
+            "Rank": 9,
+            "Regs budget": 7415591
+        },
+        "Region_79": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 9,
+                    "cost": 16403674,
+                    "Regional costs": 5117982
+                },
+                "Type of basketball court_2": {
+                    "Priority": 9,
+                    "cost": 17427486,
+                    "Regional costs": 3854956
+                },
+                "Type of basketball court_3": {
+                    "Priority": 13,
+                    "cost": 17026271,
+                    "Regional costs": 3100303
+                },
+                "Type of basketball court_4": {
+                    "Priority": 5,
+                    "cost": 18035363,
+                    "Regional costs": 3411499
+                },
+                "Type of basketball court_5": {
+                    "Priority": 4,
+                    "cost": 14715022,
+                    "Regional costs": 3834650
+                },
+                "Type of basketball court_6": {
+                    "Priority": 1,
+                    "cost": 12413752,
+                    "Regional costs": 4897449
+                },
+                "Type of basketball court_7": {
+                    "Priority": 10,
+                    "cost": 12642006,
+                    "Regional costs": 4587316
+                }
+            },
+            "Number of players": 4120,
+            "Rank": 6,
+            "Regs budget": 6630110
+        },
+        "Region_80": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 3,
+                    "cost": 19708218,
+                    "Regional costs": 4200372
+                },
+                "Type of basketball court_2": {
+                    "Priority": 1,
+                    "cost": 14387273,
+                    "Regional costs": 3826229
+                },
+                "Type of basketball court_3": {
+                    "Priority": 5,
+                    "cost": 14686374,
+                    "Regional costs": 3360949
+                },
+                "Type of basketball court_4": {
+                    "Priority": 13,
+                    "cost": 14892727,
+                    "Regional costs": 3704243
+                },
+                "Type of basketball court_5": {
+                    "Priority": 10,
+                    "cost": 19654890,
+                    "Regional costs": 3918164
+                },
+                "Type of basketball court_6": {
+                    "Priority": 13,
+                    "cost": 17994695,
+                    "Regional costs": 3538346
+                },
+                "Type of basketball court_7": {
+                    "Priority": 5,
+                    "cost": 14395490,
+                    "Regional costs": 4195630
+                }
+            },
+            "Number of players": 5291,
+            "Rank": 2,
+            "Regs budget": 5513382
+        },
+        "Region_81": {
+            "Type of basketball court": {
+                "Type of basketball court_1": {
+                    "Priority": 14,
+                    "cost": 16072113,
+                    "Regional costs": 4482896
+                },
+                "Type of basketball court_2": {
+                    "Priority": 14,
+                    "cost": 13368256,
+                    "Regional costs": 3487609
+                },
+                "Type of basketball court_3": {
+                    "Priority": 17,
+                    "cost": 12980620,
+                    "Regional costs": 4722294
+                },
+                "Type of basketball court_4": {
+                    "Priority": 4,
+                    "cost": 19375607,
+                    "Regional costs": 5135968
+                },
+                "Type of basketball court_5": {
+                    "Priority": 11,
+                    "cost": 18924031,
+                    "Regional costs": 3285693
+                },
+                "Type of basketball court_6": {
+                    "Priority": 5,
+                    "cost": 14255111,
+                    "Regional costs": 3640927
+                },
+                "Type of basketball court_7": {
+                    "Priority": 2,
+                    "cost": 19968213,
+                    "Regional costs": 3236900
+                }
+            },
+            "Number of players": 4113,
+            "Rank": 5,
+            "Regs budget": 5630993
         }
     },
     "Types of basketball courts": {
         "Type of basketball court_1": {
-            "Capacity": 113
+            "Capacity": 90
         },
         "Type of basketball court_2": {
-            "Capacity": 77
+            "Capacity": 76
         },
         "Type of basketball court_3": {
-            "Capacity": 72
+            "Capacity": 99
+        },
+        "Type of basketball court_4": {
+            "Capacity": 106
+        },
+        "Type of basketball court_5": {
+            "Capacity": 90
+        },
+        "Type of basketball court_6": {
+            "Capacity": 119
+        },
+        "Type of basketball court_7": {
+            "Capacity": 65
         }
     }
 }

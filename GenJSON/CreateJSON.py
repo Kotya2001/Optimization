@@ -59,8 +59,7 @@ class GenerateJSON:
         for i in range(len(w_keys)):
             for j in range(len(squared)):
                 _w[w_keys[i]]['Type of basketball court'][squared[j]] = {'Priority': int(self.w[i][j]), 'cost': random.randint(12000000, 20000000),
-                                                                         'Regional costs': int(_a[w_keys[i]]['Regs '
-                                                                                                             'budget'] * (1 / self.typesOfPlaces))}
+                                                                         'Regional costs': random.randint(3000000, 5200000)}
 
         # Словарь количества баскетболистов для каждого региона
         _b = {name: {'Number of players': None} for name in self.namesOfRegs}
@@ -87,10 +86,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 21
-typesOfPlaces = 3
-T = 3
-upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 4, 160000000, 3, 5
+numberOfRegs = 81
+typesOfPlaces = 7
+T = 9
+upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 6, 180000000, 24, 9
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear, maxNumberCourts)
 obj.gap()
