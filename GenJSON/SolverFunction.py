@@ -27,8 +27,10 @@ def LinearProgrammingExample(w, b, cost, p, e, T, w_dict, upperBound, totalBudge
     tot = []
     for i in range(0, len(variables), typesOfPlaces):
         l = variables[i: i + typesOfPlaces]
+        # print(l)
         for j in range(len(l)):
-            tot.append(l[j] * cost[int(i / typesOfPlaces) % typesOfPlaces][j])
+            tot.append(l[j] * cost[int(i / typesOfPlaces) % numberOfRegs][j])
+    # print(cost)
 
     model.Add(sum(tot) <= totalBudget)
 
