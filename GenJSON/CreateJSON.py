@@ -1,19 +1,17 @@
 import numpy as np
 import random
 import json
+from math import ceil
 
 
 class GenerateJSON:
 
-    def __init__(self, numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear, maxNumberCourts):
+    def __init__(self, numberOfRegs, typesOfPlaces, T, upperBound, maxNumberCourts):
         """
-
         :param numberOfRegs: -> int, number of regions
         :param typesOfPlaces: -> int, number of basketball courts types
         :param T: -> int, total number of years
         :param upperBound: -> int, maximum number of projects for each regions
-        :param totalBudget: -> int, total budget for building courts in regions
-        :param totalProjPerYear: -> int, total number of basketball court for each region per year
         :param maxNumberCourts: -> int, maximum number of basketball courts all types for each region
         """
         self.numberOfRegs = numberOfRegs
@@ -23,8 +21,8 @@ class GenerateJSON:
         self.b = np.zeros((self.numberOfRegs,)).astype(np.int64)
         self.T = T
         self.upperBound = upperBound
-        self.totalBudget = totalBudget
-        self.totalProjPerYear = totalProjPerYear
+        self.totalBudget = random.randint(3, 10)
+        self.totalProjPerYear = random.randint(1, 4)
         self.maxNumberCourts = maxNumberCourts
 
     def gap(self):
@@ -74,9 +72,18 @@ class GenerateJSON:
 
         cost_and_capacity = {i: {"Capacity": _e[i]} for i in list(_e.keys())}
 
+        mean_cost = []
+        for i in list(_w.keys()):
+            for j in list(_w[i]["Type of basketball court"].keys()):
+                mean_cost.append(_w[i]["Type of basketball court"][j]['cost'])
+
+        mean_cost = sum(mean_cost) / len(mean_cost)
+        totalBudget = int(self.upperBound * mean_cost * self.T * (0.4 + self.totalBudget * 0.2))
+        totalProjPerYear = int((self.numberOfRegs / self.T) * (0.7 + self.totalProjPerYear * 0.2))
+
         data = {'Periods': self.T,
-                'Limit on the number of projects per year': self.totalProjPerYear,
-                'Total budget': self.totalBudget,
+                'Limit on the number of projects per year': totalProjPerYear,
+                'Total budget': totalBudget,
                 'The maximum number of basketball courts in the region per year': self.upperBound,
                 'The maximum number of basketball courts all types for each region': self.maxNumberCourts,
                 'Regions': _w,
@@ -87,9 +94,9 @@ class GenerateJSON:
 
 
 numberOfRegs = 113
-typesOfPlaces = 11
+typesOfPlaces = 13
 T = 5
-upperBound, totalBudget, totalProjPerYear, maxNumberCourts = 10, 1600000000, 21, 9
+upperBound, maxNumberCourts = 10, 11
 
-obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, totalBudget, totalProjPerYear, maxNumberCourts)
+obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, maxNumberCourts)
 obj.gap()
