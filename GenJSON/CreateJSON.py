@@ -97,10 +97,10 @@ class GenerateJSON:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-numberOfRegs = 81
-typesOfPlaces = 15
-T = 9
-upperBound, maxNumberCourts = 11, 12
+numberOfRegs = 15
+typesOfPlaces = 5
+T = 5
+upperBound, maxNumberCourts = 6, 7
 
 obj = GenerateJSON(numberOfRegs, typesOfPlaces, T, upperBound, maxNumberCourts)
 obj.gap()
