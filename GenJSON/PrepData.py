@@ -3,7 +3,7 @@ import numpy as np
 import json
 
 path = '/Applications/Developing/Python/Optimization/GenJSON/data.json'
-number_bound, start = 250, 0
+number_bound, start = 250, 0  # number_bound - длина массива actions, где награды >= 0
 
 
 class PrepData:
@@ -182,4 +182,4 @@ ubound = ex.upperBound
 m = len(p)
 n = len(c)
 
-array = np.arange(start, m, number_bound)
+array = np.arange(start, m, number_bound) # массив индексов матрицы c (условий), которые по пакетам подаются в RL

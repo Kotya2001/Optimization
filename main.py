@@ -16,17 +16,8 @@ from ray.rllib.utils.typing import AgentID, PolicyID
 from typing import Dict, Optional, TYPE_CHECKING
 from ray.rllib.policy import Policy
 
-steps_per_forward = 121
+steps_per_forward = 121  # число шагов для достижения ненулевого решения
 rews, all_actions = [], []
-
-# m = 10935  # num vars
-# n = 253  # num constraints
-# ubound = 11  # upper bound of constraints
-#
-# rand = np.random.RandomState(3)
-# p = np.round(rand.random_sample(m) * 5, 1)  # goal koef
-# c = np.round(rand.random_sample((n, m)) * 10 * (rand.random_sample(m) * (p / 5) * 0.3 + 1), 1)  # constrants
-# b = np.round(c.sum(axis=1) * (rand.random_sample(n) * 0.5 + 0.3), 0)
 
 ray.shutdown()
 ray.init()
@@ -112,6 +103,8 @@ model = ppo.PPOTrainer(config=config, env=MyEnv)
 env = MyEnv(config)
 
 print(datetime.datetime.now())
+
+# loop для получения решений на фиксированном наоре переменных
 for ind in range(len(array) - 1):
     p = p[array[ind]:array[ind + 1]]
     c = c[:, array[ind]:array[ind + 1]]
