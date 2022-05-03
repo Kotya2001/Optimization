@@ -3,7 +3,7 @@ import numpy as np
 import json
 
 path = '/Applications/Developing/Python/Optimization/GenJSON/data.json'
-number_bound, start = 75, 0  # number_bound - длина массива actions, где награды >= 0
+number_bound, start = 50, 0  # number_bound - длина массива actions, где награды >= 0
 
 
 class PrepData:
